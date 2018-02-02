@@ -6,9 +6,34 @@
 .film-title {
   text-align: center;
   font-family: 'Open Sans';
+  margin-bottom: 7px;
 }
 
 .film-subtitle {
-  text-align:center;
-  width: 50%;
+  text-align: center;
+  font-family: 'Open Sans';
+  padding-left: 400px;
+  padding-right: 400px;
+  margin-top:1px;
+}
+
+.video {
+  height: 300px;
+  background: orange;
+}
+
+.menu {
+  padding-left: 400px;
+  padding-right: 400px;
+}
+.menu p {
+  margin: 40px;
+  padding: 10px;
+  display: inline-block;
+  outline-style: solid;
+  outline-color: black;
+  outline-width: thin;
+  font-size: 30px;
+  font-family: 'Open Sans';
+  text-transform: uppercase;
 }
