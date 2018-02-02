@@ -1,3 +1,14 @@
-.30MMF{
-  font-family: 'Futura';
+.award-name {
+  text-align: center;
+  font-family: 'Open Sans';
+}
+
+.film-title {
+  text-align: center;
+  font-family: 'Open Sans';
+}
+
+.film-subtitle {
+  text-align:center;
+  width: 50%;
 }
