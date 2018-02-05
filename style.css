@@ -3,107 +3,83 @@
   padding-top: 40px;
   font-family: 'Open Sans';
 }
-
 .film-title {
-  text-align: center;
-  font-family: 'Open Sans';
-  margin-bottom: 7px;
-  font-size: 60px;
+  height: 170px;
 }
+.film-title h1 {
+  text-align: center;
+  font-family: "Futura";
+}
+
+#the {
+  opacity: 0.4;
+}
+#terrifying {
+  color: black;
+  opacity:0.3;
+  position: relative;
+  top: -140px;
+  font-size: 120px;
+}
+
+#dining-hall {
+  color: black;
+  opacity:0.5;
+  position: relative;
+  top: -320px;
+  font-size: 120px;
+}
+
 
 .film-subtitle {
   text-align: center;
-  font-family: 'Open Sans';
-  padding-left: 400px;
-  padding-right: 400px;
-  margin-top:1px;
+  font-family: 'Lato';
+  font-style: italic;
 }
 
+.video-block {
+  padding-top: 40px;
+  height: 510px;
+}
 .video {
-  height: 300px;
-  background: orange;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* .menu {
-  padding-top:100px;
-  padding-left: 400px;
-  padding-right: 400px;
-}
-
-a:link {
-    text-decoration: none;
-}
-
-a:visited {
-    color: black;
-}
-
-a:hover {
-    color: gray;
-}
-
-.home-panel {
+.scroll {
+  text-align: center;
   position: absolute;
-  left: 50px;
-  top: 205px;
-  width: 20%;
+  left: 38%;
+  bottom: 10px;
+  font-family: 'Lato';
 }
 
-.home-text  {
-  position: absolute;
-  left: 150px;
-  top: 185px;
-  font-size: 28px;
-  font-family: 'Oswald';
+.about {
+  background: black;
+  width: auto;
+  height: 500px;
 }
 
-.watch-panel {
-  position: absolute;
-  left: 400px;
-  top: 200px;
-  width: 20%;
+.about p {
+  color: white;
+  font-family: 'Futura';
+  font-weight: bold;
+  font-size: 40px;
+  padding-top: 20px;
+  padding-left: 30px;
 }
 
-.watch-text  {
-  position: absolute;
-  left: 470px;
-  top: 180px;
-  font-size: 28px;
-  font-family: 'Oswald';
+.team {
+  background: white;
+  width: auto;
+  height: 500px;
 }
 
-.about-panel {
-  position: absolute;
-  left: 750px;
-  top: 200px;
-  width: 20%;
-}
-
-.about-text  {
-  position: absolute;
-  left: 850px;
-  top: 180px;
-  font-size: 28px;
-  font-family: 'Oswald';
-}
-
-.team-panel {
-  position: absolute;
-  left: 1100px;
-  top: 205px;
-  width: 20%;
-}
-
-.team-text  {
-  position: absolute;
-  left: 1200px;
-  top: 185px;
-  font-size: 28px;
-  font-family: 'Oswald';
-} */
-
-.video {
-  position: absolute;
-  left: 30%;
-  top: 40%;
+.team p {
+  color: black;
+  font-family: 'Futura';
+  font-weight: bold;
+  font-size: 40px;
+  padding-left: 30px;
 }
