@@ -1,5 +1,6 @@
 .award-name {
   text-align: center;
+  padding-top: 40px;
   font-family: 'Open Sans';
 }
 
@@ -7,6 +8,7 @@
   text-align: center;
   font-family: 'Open Sans';
   margin-bottom: 7px;
+  font-size: 60px;
 }
 
 .film-subtitle {
@@ -22,7 +24,8 @@
   background: orange;
 }
 
-.menu {
+/* .menu {
+  padding-top:100px;
   padding-left: 400px;
   padding-right: 400px;
 }
@@ -39,10 +42,6 @@ a:hover {
     color: gray;
 }
 
-a:active {
-    text-decoration: underline;
-}
-
 .home-panel {
   position: absolute;
   left: 50px;
@@ -50,55 +49,61 @@ a:active {
   width: 20%;
 }
 
-#home  {
-  position: relative;
-  left:50%;
-  top: 50%;
+.home-text  {
+  position: absolute;
+  left: 150px;
+  top: 185px;
   font-size: 28px;
   font-family: 'Oswald';
 }
 
 .watch-panel {
-  position: fixed;
+  position: absolute;
   left: 400px;
   top: 200px;
   width: 20%;
 }
 
-#watch  {
-  position: fixed;
-  left: 450px;
-  top: 185px;
+.watch-text  {
+  position: absolute;
+  left: 470px;
+  top: 180px;
   font-size: 28px;
   font-family: 'Oswald';
 }
 
 .about-panel {
-  position: fixed;
+  position: absolute;
   left: 750px;
   top: 200px;
   width: 20%;
 }
 
-#about  {
-  position: fixed;
+.about-text  {
+  position: absolute;
   left: 850px;
-  top: 185px;
+  top: 180px;
   font-size: 28px;
   font-family: 'Oswald';
 }
 
 .team-panel {
-  position: fixed;
+  position: absolute;
   left: 1100px;
   top: 205px;
   width: 20%;
 }
 
-#team  {
-  position: fixed;
+.team-text  {
+  position: absolute;
   left: 1200px;
-  top: 195px;
+  top: 185px;
   font-size: 28px;
   font-family: 'Oswald';
+} */
+
+.video {
+  position: absolute;
+  left: 30%;
+  top: 40%;
 }
