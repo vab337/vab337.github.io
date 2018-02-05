@@ -1,46 +1,28 @@
-<!DOCTYPE hml>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title> The Terrifying Dining Hall </title>
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <link rel="stylesheet" href='style.css'>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <p class = "award-name"> 30 Minute Film Festival </p>
-    <h1 class = "film-title"> THE TERRIFYING DINING HALL </h1>
-    <p class = "film-subtitle"> Join Van in her quest into the Dining Hall and find out
-      the horrible truth this Spring semester holds in store </p>
+<head>
+  <title> The Terrifying Dining Hall </title>
+  <meta charset="utf-8">
+  <style>
+    img {
+      width: 100%;
+    }
 
-<div class = "home-menu">
-  <a href = "index.html">
-    <img class = "home-panel" src = "images/home-panel.png">
-  </a>
-</div>
+    .instructions {
+      position: fixed;
+      font-family: 'Open Sans';
+      font-size: 20px;
+      color: #FFFFF1;
+      top: 400px;
+      left: 600px;
+    }
 
-    <div class = "menu">
-      <!-- <a href = "index.html">
-        <img class = "home-panel" src = "images/home-panel.png">
-        <p id = "home"> HOME </p>
-      </a> -->
-      <a href = "watch.html">
-        <img class = "watch-panel" src = "images/watch-panel.png">
-        <p id = "watch"> WATCH FILM </p>
-      </a>
-      <a href = "about.html">
-        <img class = "about-panel" src = "images/about-panel.png">
-        <p id = "about"> ABOUT </p>
-      </a>
-      <a href = "team.html">
-        <img class = "team-panel" src = "images/team-panel.png">
-        <p id = "team"> TEAM </p>
-      </a>
-    </div>
+  </style>
+</head>
 
-    <!-- <div class = "video">
-      <p> video </p>
-    </div> -->
-
-
-  </body>
+<body>
+  <p class = "instructions"> Click to open the door </p>
+  <img src = "images/doors.png">
+  <script src="landing.js"></script>
+</body>
 </html>
