@@ -26,14 +26,79 @@
   padding-left: 400px;
   padding-right: 400px;
 }
-.menu p {
-  margin: 40px;
-  padding: 10px;
-  display: inline-block;
-  outline-style: solid;
-  outline-color: black;
-  outline-width: thin;
-  font-size: 30px;
-  font-family: 'Open Sans';
-  text-transform: uppercase;
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: gray;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.home-panel {
+  position: absolute;
+  left: 50px;
+  top: 205px;
+  width: 20%;
+}
+
+#home  {
+  position: relative;
+  left:50%;
+  top: 50%;
+  font-size: 28px;
+  font-family: 'Oswald';
+}
+
+.watch-panel {
+  position: fixed;
+  left: 400px;
+  top: 200px;
+  width: 20%;
+}
+
+#watch  {
+  position: fixed;
+  left: 450px;
+  top: 185px;
+  font-size: 28px;
+  font-family: 'Oswald';
+}
+
+.about-panel {
+  position: fixed;
+  left: 750px;
+  top: 200px;
+  width: 20%;
+}
+
+#about  {
+  position: fixed;
+  left: 850px;
+  top: 185px;
+  font-size: 28px;
+  font-family: 'Oswald';
+}
+
+.team-panel {
+  position: fixed;
+  left: 1100px;
+  top: 205px;
+  width: 20%;
+}
+
+#team  {
+  position: fixed;
+  left: 1200px;
+  top: 195px;
+  font-size: 28px;
+  font-family: 'Oswald';
 }
