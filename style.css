@@ -55,13 +55,13 @@
   font-family: 'Lato';
 }
 
-.about {
+#about {
   background: black;
   width: auto;
   height: 500px;
 }
 
-.about p {
+#about p {
   color: white;
   font-family: 'Futura';
   font-weight: bold;
@@ -70,13 +70,13 @@
   padding-left: 30px;
 }
 
-.team {
+#team {
   background: white;
   width: auto;
   height: 500px;
 }
 
-.team p {
+#team p {
   color: black;
   font-family: 'Futura';
   font-weight: bold;
