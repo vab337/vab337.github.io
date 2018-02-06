@@ -6,5 +6,5 @@ doors.onclick = function() {
 }
 
  function changePage() {
-     window.location.href = "index.html";
+     window.location.href = "home.html";
    }
