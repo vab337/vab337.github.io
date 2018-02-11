@@ -1,3 +1,14 @@
+#upper-body {
+  opacity: 1;
+  transition: opacity 1s linear;
+  background: black;
+}
+
+body {
+  margin: 0px;
+  background: black;
+}
+
 .award {
   height: 10%;
 }
@@ -7,6 +18,7 @@
   height: 100%;
   margin-left: auto;
   margin-right: auto;
+  filter:invert(100%);
 }
 
 .film-title {
@@ -20,29 +32,30 @@
 
 .terrifying {
   position: relative;
-  top: -140px;
+  top: -135px;
 }
 
 .dining-hall {
   position: relative;
-  top: -320px;
+  top: -315px;
 }
 
 .the h1 {
   margin-top: 0px;
-  opacity: 0.4;
+  opacity: 0.6;
+  color: white;
 }
 
 .terrifying h1 {
   font-size: 120px;
-  color: black;
-  opacity:0.3;
+  color: white;
+  opacity:0.7;
 }
 
 .dining-hall h1 {
   font-size: 120px;
-  color: black;
-  opacity:0.5;
+  color: white;
+  opacity:0.9;
 }
 
 
@@ -50,7 +63,11 @@
   text-align: center;
   font-family: 'Lato';
   font-style: italic;
+  color: white;
+  opacity: 0.9;
 }
+
+
 
 .video-block {
   padding-top: 2%;
@@ -70,63 +87,104 @@
   display: block;
   margin-right: auto;
   margin-left: auto;
+  filter:invert(100%);
 }
 
 .about {
-  visibility: hidden;
+  opacity: 0;
   background: white;
   width: auto;
-  /* height: 500px; */
+  padding-top: 2%;
+  transition: opacity 1s ease-in;
+  height: 70%;
+  animation-fill-mode: forwards;
 }
 
 
-.about p {
-  color: white;
+.about h3 {
+  color: black;
   font-family: 'Futura';
   font-weight: bold;
   font-size: 40px;
-  padding-top: 20px;
-  padding-left: 30px;
+  margin-left: 2%;
+  margin-bottom: 1%;
 }
 
-.slideIn {
-    animation-name: slideIn;
-    animation-duration: 2.5s;
-    visibility: visible;
-    animation-fill-mode: forwards;
+.description {
+  font-family: 'Lato';
+  font-size: 22px;
+  font-weight: 300;
+  margin-left: 14%;
+  margin-right: 5%;
 }
 
-@keyframes slideIn {
-    0% {
-        background: white;
-        opacity: 0;
-        font-family: 'Futura';
-        font-weight: bold;
-        font-size: 40px;
-        height: 50%;
-    }
-    100% {
-        background: black;
-        color: white;
-        font-family: 'Futura';
-        font-weight: bold;
-        font-size: 40px;
-        padding-left: 2%;
-        width: auto;
-        height: 50%;
-    }
+.praise {
+  font-family: 'Lato';
+  font-size: 30px;
+  font-weight: 300;
+  font-style: italic;
+  margin-left: 14%;
+}
+
+.praise span {
+  font-size: 20px;
+}
+
+.film-name {
+  font-style: italic;
 }
 
 .team {
   background: white;
   width: auto;
-  height: 500px;
+  height: 90%;
+  opacity: 0;
+  transition: opacity 1s linear;
+  animation-fill-mode: forwards;
 }
 
-.team p {
+.team h3 {
   color: black;
   font-family: 'Futura';
   font-weight: bold;
   font-size: 40px;
-  padding-left: 30px;
+  padding-top: 2.5%;
+  padding-left: 2%;
+  margin-top: 0px;
+  margin-bottom: 5%;
+  margin-left: 2%;
+}
+
+.team-images div {
+  width: 22%;
+  display: inline-block;
+  margin: 1%;
+
+}
+
+.team-names div {
+  width: 23%;
+  display: inline-block;
+  margin: 0.5%;
+}
+
+.team-names p {
+  text-align: center;
+  font-family: 'Lato';
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.up-arrow {
+  position: fixed;
+  bottom: 2%;
+  left: 90%;
+  height: 9%;
+}
+
+.up-arrow img {
+  opacity:0;
+  height: 75%;
+  cursor: pointer;
+  transition: opacity 0.5s linear;
 }
