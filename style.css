@@ -1,3 +1,4 @@
+
 #upper-body {
   opacity: 1;
   transition: opacity 1s linear;
@@ -58,6 +59,101 @@ body {
   opacity:0.9;
 }
 
+/* Media Query for film title  */
+@media  (max-width: 870px) {
+  .terrifying h1 {
+    font-size: 100px;
+  }
+  .dining-hall h1 {
+    font-size: 100px;
+  }
+  .terrifying {
+  position: relative;
+  top: -115px;
+  }
+  .dining-hall {
+  position: relative;
+  top: -260px;
+  }
+}
+
+@media  (max-width: 760px) {
+  .terrifying h1 {
+    font-size: 80px;
+  }
+  .dining-hall h1 {
+    font-size: 80px;
+  }
+  .terrifying {
+  position: relative;
+  top: -95px;
+  }
+  .dining-hall {
+  position: relative;
+  top: -210px;
+  }
+}
+
+@media  (max-width: 599px) and (orientation: portrait){
+  .film-title {
+    margin-left: 3%;
+  }
+  .the h1 {
+    text-align: left;
+  }
+  .terrifying h1 {
+    text-align: left;
+    font-size: 60px;
+  }
+  .dining-hall h1 {
+    text-align: left;
+    font-size: 60px;
+  }
+  .terrifying {
+  position: relative;
+  top: -75px;
+  }
+  .dining-hall {
+  position: relative;
+  top: -155px;
+  }
+}
+
+@media (max-width: 450px) and (orientation: portrait) {
+  .terrifying h1 {
+    font-size: 50px;
+  }
+  .dining-hall h1 {
+    font-size: 50px;
+  }
+  .terrifying {
+  position: relative;
+  top: -65px;
+  }
+  .dining-hall {
+  position: relative;
+  top: -140px;
+  }
+}
+
+@media (max-width: 380px) and (orientation: portrait) {
+  .terrifying h1 {
+    font-size: 45px;
+  }
+  .dining-hall h1 {
+    font-size: 45px;
+  }
+  .terrifying {
+  position: relative;
+  top: -60px;
+  }
+  .dining-hall {
+  position: relative;
+  top: -125px;
+  }
+}
+
+/* End of Media Query for film title */
 
 .film-subtitle {
   text-align: center;
@@ -67,7 +163,35 @@ body {
   opacity: 0.9;
 }
 
+/* Media Query for height of film title & film subtitle */
+@media  (max-width: 760px) {
+    .film-title {
+      height: 18%;
+    }
+    .film-subtitle {
+        font-size: 14px;
+    }
+}
 
+@media  (max-width: 599px) and (orientation: portrait){
+  .film-title {
+    margin-left: 3%;
+    height: 15%;
+  }
+  .film-subtitle {
+    font-size: 14px;
+    padding-left: 4%;
+    text-align: left;
+    padding-right: 15%;
+  }
+}
+
+@media (max-width: 414px) and (orientation: portrait) {
+  .film-title {
+    height: 12%;
+  }
+}
+/* End of Media Query for height of film title & film subtitle */
 
 .video-block {
   padding-top: 2%;
@@ -77,10 +201,39 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width : 50%;
+  height : 95%
 }
 
-.scroll {
+/* Media Query for video */
+@media (max-width: 1000px) {
+  .video {
+    width: 75%;
+    height : 95%
+  }
 }
+@media (max-width: 870px) {
+  .video {
+    width: 75%;
+    height : 95%
+  }
+}
+@media  (max-width: 760px) {
+  .video {
+    width: 75%;
+    height : 95%
+  }
+}
+
+@media  (max-width: 599px) and (orientation: portrait){
+    .video {
+      width: 90%;
+      height : 95%
+    }
+  }
+}
+/* End of Media Query for video */
+.scroll {}
 
 .scroll img {
   width: 4%;
@@ -90,13 +243,27 @@ body {
   filter:invert(100%);
 }
 
+/* Media Query for scroll icon */
+@media  (max-width: 760px) {
+  .scroll img {
+    width: 7%;
+  }
+}
+
+@media  (max-width: 599px) and (orientation: portrait){
+    .scroll img {
+      width: 7%;
+    }
+  }
+/* End of Media Query for scroll icon */
+
 .about {
   opacity: 0;
   background: white;
   width: auto;
   padding-top: 2%;
   transition: opacity 1s ease-in;
-  height: 70%;
+  height: 90%;
   animation-fill-mode: forwards;
 }
 
@@ -109,6 +276,29 @@ body {
   margin-left: 2%;
   margin-bottom: 1%;
 }
+
+/* Media Query for About */
+@media  (max-width: 870px) {
+}
+
+@media  (max-width: 760px) {
+  .about h3 {
+    font-size: 36px;
+  }
+}
+
+@media  (max-width: 599px) and (orientation: portrait){
+  .about h3 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 450px) and (orientation: portrait) {
+  .about h3 {
+    font-size: 24px;
+  }
+}
+
+/* End of Media Query for About*/
 
 .description {
   font-family: 'Lato';
@@ -129,6 +319,44 @@ body {
 .praise span {
   font-size: 20px;
 }
+
+/* Media Query for Description, Praise */
+@media  (max-width: 760px) {
+  .description {
+    font-size: 20px;
+  }
+  .praise {
+    font-size: 26px;
+  }
+  .praise span {
+    font-size: 18px;
+  }
+}
+
+@media  (max-width: 599px) and (orientation: portrait){
+  .description {
+    font-size: 18px;
+  }
+  .praise {
+    font-size: 24px;
+  }
+  .praise span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 450px) and (orientation: portrait) {
+  .description {
+    font-size: 12px;
+  }
+  .praise {
+    font-size: 20px;
+  }
+  .praise span {
+    font-size: 14px;
+  }
+}
+/* End of Media Query for Description, Praise */
 
 .film-name {
   font-style: italic;
@@ -174,6 +402,24 @@ body {
   font-size: 24px;
   font-weight: 300;
 }
+
+/* Media Query for Team images */
+@media  (max-width: 760px) {
+  .team div {
+    display: inline-block;
+  }
+
+  .team-images div {
+    width: 50%;
+    display: block;
+  }
+
+  .team-names div {
+    width: 50%;
+    display: block;
+  }
+}
+/* End of Media Query for Team images */
 
 .up-arrow {
   position: fixed;
