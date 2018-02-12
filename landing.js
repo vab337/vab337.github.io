@@ -1,6 +1,6 @@
-var doors = document.querySelector('img');
+let doors = document.getElementById('doors');
 
-doors.onclick = function() {
+doors.onclick = () => {
       doors.setAttribute ('src','images/doors.gif');
       setTimeout(changePage, 3500);
 }
