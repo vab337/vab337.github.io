@@ -40,7 +40,6 @@ body {
 a:link {
     color: white;
     text-decoration: none;
-    color: white;
     text-align: center;
 }
 
@@ -62,4 +61,11 @@ a:active {
 .form p {
   color: white;
   background: red;
+}
+
+p {
+  font-family: 'Montserrat';
+  font-size: 18px;
+  color: white;
+  text-align: center;
 }
