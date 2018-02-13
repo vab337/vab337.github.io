@@ -1,0 +1,18 @@
+body {
+  background: black;
+}
+
+.logo {
+  width: 160px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.title {
+  font-family: 'Montserrat';
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+}
