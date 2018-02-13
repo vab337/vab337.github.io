@@ -16,3 +16,25 @@ body {
   color: white;
   margin-top: 10px;
 }
+
+.nav {
+  margin: 5%;
+  width: 90%;
+}
+
+.nav div {
+  font-family: 'Montserrat';
+  font-size: 18px;
+  color: white;
+  width: 18%;
+  display: inline-block;
+  text-align: center;
+}
+
+.nav div: hover {
+  color: blue;
+}
+
+.rhythm-project {
+  width: 100%;
+}
