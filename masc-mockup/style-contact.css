@@ -58,3 +58,8 @@ a:hover {
 a:active {
     color: gray;
 }
+
+.form p {
+  color: white;
+  background: red;
+}

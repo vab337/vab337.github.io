@@ -1,0 +1,101 @@
+body {
+  background: black;
+}
+
+.logo {
+  width: 160px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.title {
+  font-family: 'Montserrat';
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+}
+
+.nav {
+  margin: 5%;
+  width: 95%;
+}
+
+.nav div {
+  width: 23%;
+  display: inline-block;
+  text-align: center;
+}
+
+.nav a {
+  font-family: 'Montserrat';
+  font-size: 18px;
+}
+/* unvisited link */
+a:link {
+    color: white;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color:gray;
+}
+
+/* selected link */
+a:active {
+    color: gray;
+}
+
+.about {
+  height: 90%;
+}
+
+.about-title {
+  color: white;
+  font-family: 'Montserrat';
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.about-text {
+  color: white;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 200;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+}
+
+.names {
+  color: white;
+  font-family: 'Montserrat';
+  font-size: 20px;
+  font-weight: 400;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-description {
+  color: white;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 200;
+  font-style: italic;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+}
