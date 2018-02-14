@@ -46,6 +46,8 @@ a:link {
 /* visited link */
 a:visited {
     color: white;
+    font-family: 'Montserrat';
+    font-size: 18px;
 }
 
 /* mouse over link */
@@ -60,12 +62,18 @@ a:active {
 
 .form p {
   color: white;
-  background: red;
+  font-family: 'Montserrat';
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 1%;
 }
 
-p {
-  font-family: 'Montserrat';
-  font-size: 18px;
-  color: white;
-  text-align: center;
+.form input {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.waves {
+  width: 100%;
 }
