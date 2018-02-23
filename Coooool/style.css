@@ -1,0 +1,49 @@
+body {
+  font-family: "Montserrat";
+}
+
+.title {
+  background: white;
+}
+
+.title h1 {
+  color: black;
+  text-align: center;
+}
+
+a:link {
+    color:white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color:grey;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.sound {
+  background: #84DCC6;
+  margin-left: 0;
+  padding: 3%;
+}
+
+.sound h3 {
+  font-weight: bold;
+  font-size: 30px;
+  opacity: 0.5;
+
+}
+
+.graphic-design {
+  background: #FFA69E;
+  margin-left: 0;
+  padding: 3%;
+}
