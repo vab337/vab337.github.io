@@ -3,22 +3,46 @@ body {
   font-family: 'Montserrat';
 }
 
+div {
+  display: inline-block;
+
+}
+
+.mff a {
+  color: orange;
+
+}
+
+.sound a {
+  color: blue;
+}
+
+.comics a {
+  color: crimson;
+}
+
+.video a {
+  color: lightSeaGreen;
+}
+
+
 a {
-  font-size: 24px;
+  font-size: 100px;
+  opacity: 0.5;
 }
 
 a:link {
-    color: white;
     text-decoration: none;
-
 }
 
-/* visited link */
-a:visited {
-    color: white;
-}
-
-/* mouse over link */
 a:hover {
-    color: gray;
+    opacity: 1;
+    transition: opacity 0.5s linear;
+}
+
+span {
+  color: white;
+  font-size: 12px;
+  font-family: 'Montserrat';
+  opacity:0.5;
 }
