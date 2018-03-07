@@ -1,0 +1,569 @@
+
+#upper-body {
+  opacity: 1;
+  transition: opacity 1s linear;
+  background: black;
+}
+
+body {
+  margin: 0px;
+  background: black;
+}
+
+.award {
+  height: 10%;
+}
+
+.award img {
+  display:block;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  filter: invert(100%);
+}
+
+.film-title {
+  height:23%;
+}
+
+.film-title h1 {
+  text-align: center;
+  font-family: "Montserrat";
+}
+
+.terrifying {
+  position: relative;
+  top: -135px;
+}
+
+.dining-hall {
+  position: relative;
+  top: -315px;
+}
+
+.the h1 {
+  margin-top: 0px;
+  opacity: 0.6;
+  color: white;
+}
+
+.terrifying h1 {
+  font-size: 120px;
+  color: white;
+  opacity:0.7;
+}
+
+.dining-hall h1 {
+  font-size: 120px;
+  color: white;
+  opacity:0.9;
+}
+
+/* Media Query for film title  */
+@media  (max-width: 870px) {
+  .terrifying h1 {
+    font-size: 100px;
+  }
+  .dining-hall h1 {
+    font-size: 100px;
+  }
+  .terrifying {
+  position: relative;
+  top: -115px;
+  }
+  .dining-hall {
+  position: relative;
+  top: -260px;
+  }
+}
+
+@media  (max-width: 760px) {
+  .terrifying h1 {
+    font-size: 80px;
+  }
+  .dining-hall h1 {
+    font-size: 80px;
+  }
+  .terrifying {
+  position: relative;
+  top: -95px;
+  }
+  .dining-hall {
+  position: relative;
+  top: -210px;
+  }
+}
+
+@media  (max-width: 599px) and (orientation: portrait){
+  .film-title {
+    margin-left: 3%;
+  }
+  .the h1 {
+    text-align: left;
+  }
+  .terrifying h1 {
+    text-align: left;
+    font-size: 60px;
+  }
+  .dining-hall h1 {
+    text-align: left;
+    font-size: 60px;
+  }
+  .terrifying {
+  position: relative;
+  top: -75px;
+  }
+  .dining-hall {
+  position: relative;
+  top: -155px;
+  }
+}
+
+@media (max-width: 450px) and (orientation: portrait) {
+  .terrifying h1 {
+    font-size: 50px;
+  }
+  .dining-hall h1 {
+    font-size: 50px;
+  }
+  .terrifying {
+  position: relative;
+  top: -65px;
+  }
+  .dining-hall {
+  position: relative;
+  top: -140px;
+  }
+}
+
+@media (max-width: 380px) and (orientation: portrait) {
+  .terrifying h1 {
+    font-size: 45px;
+  }
+  .dining-hall h1 {
+    font-size: 45px;
+  }
+  .terrifying {
+  position: relative;
+  top: -60px;
+  }
+  .dining-hall {
+  position: relative;
+  top: -125px;
+  }
+}
+
+@media (max-width: 740px) and (max-height:420px) and (orientation: landscape) {
+  .the h1 {
+    font-size: 28px;
+  }
+  .terrifying h1 {
+    font-size: 48px;
+  }
+  .dining-hall h1 {
+    font-size: 48px;
+  }
+  .terrifying {
+  position: relative;
+  top: -60px;
+  }
+  .dining-hall {
+  position: relative;
+  top: -130px;
+  }
+}
+
+/* End of Media Query for film title */
+
+.film-subtitle {
+  text-align: center;
+  font-family: 'Lato';
+  font-style: italic;
+  color: white;
+  opacity: 0.9;
+}
+
+/* Media Query for height of film title & film subtitle */
+@media  (max-width: 760px) {
+    .film-title {
+      height: 18%;
+    }
+    .film-subtitle {
+        font-size: 14px;
+    }
+}
+
+@media  (max-width: 599px) and (orientation: portrait){
+  .film-title {
+    margin-left: 3%;
+    height: 15%;
+  }
+  .film-subtitle {
+    font-size: 14px;
+    padding-left: 4%;
+    text-align: left;
+    padding-right: 15%;
+  }
+}
+
+@media (max-width: 414px) and (orientation: portrait) {
+  .film-title {
+    height: 12%;
+  }
+}
+/* End of Media Query for height of film title & film subtitle */
+
+.video-block {
+  padding-top: 2%;
+  height: 50%;
+}
+.video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width : 50%;
+  height : 95%
+}
+
+/* Media Query for video */
+@media (max-width: 1000px) {
+  .video {
+    width: 75%;
+    height : 95%
+  }
+}
+@media (max-width: 870px) {
+  .video {
+    width: 75%;
+    height : 95%
+  }
+}
+@media  (max-width: 760px) {
+  .video {
+    width: 75%;
+    height : 95%
+  }
+}
+
+@media  (max-width: 599px) and (orientation: portrait){
+    .video {
+      width: 90%;
+      height : 95%
+    }
+  }
+}
+/* End of Media Query for video */
+.scroll {}
+
+.scroll img {
+  width: 4%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  filter:invert(100%);
+}
+
+/* Media Query for scroll icon */
+@media  (max-width: 760px) {
+  .scroll img {
+    width: 7%;
+  }
+}
+
+@media  (max-width: 599px) and (orientation: portrait){
+    .scroll img {
+      width: 7%;
+    }
+  }
+
+@media (max-width: 740px) and (max-height:420px) and (orientation: landscape) {
+  .scroll img {
+    width: 5%;
+  }
+}
+/* End of Media Query for scroll icon */
+
+.about {
+  opacity: 0;
+  background: white;
+  width: auto;
+  padding-top: 2%;
+  transition: opacity 1s ease-in;
+  height: 60%;
+  animation-fill-mode: forwards;
+}
+
+.about p {
+  width: 70%;
+}
+
+
+.about h3 {
+  color: black;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 40px;
+  margin-left: 2%;
+  margin-bottom: 1%;
+}
+
+/* Media Query for About */
+@media  (max-width: 870px) {
+}
+
+@media  (max-width: 760px) {
+  .about h3 {
+    font-size: 36px;
+  }
+}
+
+@media  (max-width: 599px) and (orientation: portrait){
+  .about h3 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 450px) and (orientation: portrait) {
+  .about h3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 740px) and (max-height:420px) and (orientation: landscape) {
+  .about {
+    height: 90%
+  }
+}
+
+/* End of Media Query for About*/
+
+.description {
+  font-family: 'Lato';
+  font-size: 22px;
+  font-weight: 300;
+  margin-left: 14%;
+  margin-right: 5%;
+}
+
+.praise {
+  font-family: 'Lato';
+  font-size: 30px;
+  font-weight: 300;
+  font-style: italic;
+  margin-left: 14%;
+}
+
+.praise span {
+  font-size: 20px;
+}
+
+/* Media Query for Description, Praise */
+@media  (max-width: 760px) {
+  .description {
+    font-size: 20px;
+  }
+  .praise {
+    font-size: 26px;
+  }
+  .praise span {
+    font-size: 18px;
+  }
+}
+
+@media  (max-width: 599px) and (orientation: portrait){
+  .description {
+    font-size: 18px;
+  }
+  .praise {
+    font-size: 24px;
+  }
+  .praise span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 450px) and (orientation: portrait) {
+  .description {
+    font-size: 12px;
+  }
+  .praise {
+    font-size: 20px;
+  }
+  .praise span {
+    font-size: 14px;
+  }
+}
+
+  @media (max-width: 740px) and (max-height:420px) and (orientation: landscape) {
+    .description {
+      font-size: 16px;
+    }
+    .praise {
+      font-size: 22px;
+    }
+    .praise span {
+      font-size: 16px;
+    }
+  }
+/* End of Media Query for Description, Praise */
+
+.film-name {
+  font-style: italic;
+}
+
+.team {
+  background: white;
+  width: auto;
+  height: 90%;
+  opacity: 0;
+  transition: opacity 1s linear;
+  animation-fill-mode: forwards;
+}
+
+.team h3 {
+  color: black;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 40px;
+  padding-top: 2.5%;
+  padding-left: 2%;
+  margin-top: 0px;
+  margin-bottom: 5%;
+  margin-left: 2%;
+}
+
+.team-images div {
+  width: 22%;
+  display: inline-block;
+  margin: 1%;
+
+}
+
+.team-images img:hover {
+  animation: shake 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-2deg); }
+    20% { transform: translate(-3px, 0px) rotate(2deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(2deg); }
+    50% { transform: translate(-1px, 2px) rotate(-2deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-2deg); }
+    80% { transform: translate(-1px, -1px) rotate(2deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-2deg); }
+}
+/* taken from W3schools */
+
+.team-names div {
+  width: 23%;
+  display: inline-block;
+  margin: 0.5%;
+}
+
+.team-names p {
+  text-align: center;
+  font-family: 'Lato';
+  font-size: 24px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Media Query for Team images & names */
+@media  (max-width: 599px) {
+  .team {
+    height: 100%;
+    /* height changes to fit the vertical team names */
+  }
+  .team div {
+    display: inline-block;
+  }
+
+  .team-images {
+    width: 30%
+  }
+
+  .team-images div {
+    width: 200px;
+    display: block;
+    float: left;
+  }
+
+  .team-names {
+    width: 50%;
+    height: 93%;
+    float: right;
+  }
+
+  .team-names div {
+    width: 100%;
+    height: 190px;
+    display: block;
+    float: right;
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 414px) {
+  .team-images div {
+    width: 150px;
+  }
+  .team-names div {
+    height: 150px;
+    padding-top: 15px;
+  }
+  .team-names p {
+    font-size: 18px;
+  }
+}
+/* End of Media Query for Team images */
+
+.feedback {
+  background: black;
+  height: 10%;
+  margin: 5%;
+  }
+
+.feedback-text {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  color: white;
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.sponsor {
+  font-family: 'Lato';
+  font-style: italic;
+  font-size: 18px;
+  margin-top: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  text-align: center;
+}
+
+.sponsor span {
+  font-size: 10px;
+}
+
+.up-arrow {
+  position: fixed;
+  bottom: 2%;
+  left: 90%;
+  height: 9%;
+}
+
+.up-arrow img {
+  opacity:0;
+  height: 75%;
+  cursor: pointer;
+  transition: opacity 0.5s linear;
+}
