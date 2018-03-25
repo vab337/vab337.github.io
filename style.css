@@ -25,6 +25,10 @@ div {
   color: lightSeaGreen;
 }
 
+.animation a {
+  color: salmon;
+}
+
 
 a {
   font-size: 100px;
