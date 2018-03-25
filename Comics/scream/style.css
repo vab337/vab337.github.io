@@ -1,0 +1,45 @@
+body {
+  background-color: black;
+}
+
+h1 {
+  font-family: 'Montserrat';
+  color: white;
+  font-weight: 300;
+  text-align: center;
+  font-size: 30pt;
+  margin-top: 0;
+}
+
+h5 {
+  font-family: 'Montserrat';
+  color: white;
+  font-weight: 300;
+  text-align: center;
+}
+
+.screamImage {
+  width: 500px;
+  height: 637px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.screamApple {
+  cursor: pointer;
+}
+
+.screamGif {
+  width: 500px;
+  height: 637px;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.arrowContainer {
+  position: fixed;
+  bottom: 10px;
+  padding-left: 90%;
+}
