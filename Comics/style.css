@@ -33,19 +33,19 @@ h5 {
   color: white;
 }
 
-.about a:link {
+ a:link {
     color: white;
     background-color: transparent;
     text-decoration: none;
 }
 
-.about a:visited {
+ a:visited {
     color: white;
     background-color: transparent;
     text-decoration: none;
 }
 
-.about a:hover {
+ a:hover {
     color: gray;
     text-decoration: none;
 }
