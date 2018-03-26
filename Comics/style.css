@@ -53,6 +53,11 @@ h2 {
 
 /* End of Home + About */
 
+.letsgo {
+  text-decoration: underline; 
+}
+
+
 
 .image {
   width: 900px;
