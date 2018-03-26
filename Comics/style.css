@@ -33,19 +33,19 @@ h2 {
   color: white;
 }
 
- a:link {
+.about a:link {
     font-family: 'Montserrat';
     color: white;
     text-decoration: none;
 }
 
- a:visited {
+ .about a:visited {
     font-family: 'Montserrat';
     color: white;
     text-decoration: none;
 }
 
- a:hover {
+ .about a:hover {
     font-family: 'Montserrat';
     color: gray;
     text-decoration: none;
@@ -53,8 +53,29 @@ h2 {
 
 /* End of Home + About */
 
-.letsgo {
-  text-decoration: underline; 
+.letso {
+  display: inline-block;
+  float: center ;
+  font-family: 'Montserrat';
+  color: white;
+}
+
+.letsgo a:link {
+    font-family: 'Montserrat';
+    color: white;
+    text-decoration: underline;
+}
+
+ .letsgo a:visited {
+    font-family: 'Montserrat';
+    color: white;
+    text-decoration: underline;
+}
+
+ .letsgo a:hover {
+    font-family: 'Montserrat';
+    color: gray;
+    text-decoration: underline;
 }
 
 
