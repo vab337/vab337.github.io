@@ -1,12 +1,7 @@
 body {
-  background-color: black;
   font-family: 'Montserrat';
 }
 
-div {
-  display: inline-block;
-
-}
 
 .mff a {
   color: orange;
@@ -45,7 +40,7 @@ a:hover {
 }
 
 span {
-  color: white;
+  color: grey;
   font-size: 12px;
   font-family: 'Montserrat';
   opacity:0.5;
