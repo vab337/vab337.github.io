@@ -11,7 +11,7 @@ h1 {
   font-size: 30pt;
 }
 
-h5 {
+h2 {
   font-family: 'Montserrat';
   color: white;
   font-weight: 300;
@@ -34,16 +34,19 @@ h5 {
 }
 
  a:link {
+    font-family: 'Montserrat';
     color: white;
     text-decoration: none;
 }
 
  a:visited {
+    font-family: 'Montserrat';
     color: white;
     text-decoration: none;
 }
 
  a:hover {
+    font-family: 'Montserrat';
     color: gray;
     text-decoration: none;
 }
