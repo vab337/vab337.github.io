@@ -11,14 +11,7 @@ h1 {
   font-size: 30pt;
 }
 
-h4 {
-  font-family: 'Montserrat';
-  color: white;
-  font-weight: 300;
-  text-align: center;
-}
-
-h3 {
+h5 {
   font-family: 'Montserrat';
   color: white;
   font-weight: 300;
@@ -41,50 +34,23 @@ h3 {
 }
 
 .about a:link {
-    font-family: 'Montserrat';
     color: white;
+    background-color: transparent;
     text-decoration: none;
 }
 
- .about a:visited {
-    font-family: 'Montserrat';
+.about a:visited {
     color: white;
+    background-color: transparent;
     text-decoration: none;
 }
 
- .about a:hover {
-    font-family: 'Montserrat';
+.about a:hover {
     color: gray;
     text-decoration: none;
 }
 
 /* End of Home + About */
-
-.letso {
-  display: inline-block;
-  float: center ;
-  font-family: 'Montserrat';
-  color: white;
-}
-
-.letsgo a:link {
-    font-family: 'Montserrat';
-    color: white;
-    text-decoration: underline;
-}
-
- .letsgo a:visited {
-    font-family: 'Montserrat';
-    color: white;
-    text-decoration: underline;
-}
-
- .letsgo a:hover {
-    font-family: 'Montserrat';
-    color: gray;
-    text-decoration: underline;
-}
-
 
 
 .image {
