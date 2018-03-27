@@ -54,10 +54,9 @@ h4 {
 /* End of Home + About */
 
 .letsgo {
-  display: inline-block;
-  float: center ;
   font-family: 'Montserrat';
   color: white;
+  text-align: center;
 }
 
 .letsgo a {
@@ -69,18 +68,24 @@ h4 {
     font-family: 'Montserrat';
     color: white;
     text-decoration: underline;
+    text-align: center;
+
 }
 
  .letsgo a:visited {
     font-family: 'Montserrat';
     color: white;
     text-decoration: underline;
+     text-align: center;
+
 }
 
  .letsgo a:hover {
     font-family: 'Montserrat';
     color: gray;
     text-decoration: underline;
+     text-align: center;
+
 }
 
 
