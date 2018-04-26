@@ -18,5 +18,7 @@ function changecolor () {
 text.addEventListener("mouseover",bigger)
 
 function bigger() {
-  text.style.fontSize = "100px" 
+  text.style.fontSize = "100px"
+  text.style.color = "crimson" 
+
 }
