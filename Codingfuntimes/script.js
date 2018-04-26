@@ -9,5 +9,5 @@ totoro.onlick = () => {
 totoro.addEventListener("click", displayvideo)
 
 function displayvideo() {
-  introVideo.style.visibility = visible
+  introVideo.style.visibility = "visible"
 }
