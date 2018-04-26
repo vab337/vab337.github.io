@@ -1,0 +1,8 @@
+.totoro img {
+  width: 100px;
+  cursor: pointer;
+}
+
+.introVideo {
+  visibility: hidden;
+}
