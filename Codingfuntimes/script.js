@@ -1,11 +1,17 @@
 let totoro = document.getElementById('totoro')
 let introVideo = document.getElementById('introVideo')
 let text = document.getElementById('text')
+let music = document.getElementById('music')
 
-totoro.addEventListener("click", displayvideo)
+
+totoro.addEventListener("mouseout", playmusic)
+
+function playmusic() {
+  music.play()
+}
 
 function displayvideo() {
-  introVideo.style.visibility = "visible"
+  introVideo.style.display = "block"
 }
 
 totoro.addEventListener("click",changecolor)
@@ -19,6 +25,6 @@ text.addEventListener("mouseover",bigger)
 
 function bigger() {
   text.style.fontSize = "100px"
-  text.style.color = "crimson" 
+  text.style.color = "crimson"
 
 }

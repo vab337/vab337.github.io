@@ -8,9 +8,13 @@
 </head>
 
   <body>
-    <h1 id="text" onmouseover = "bigger"> YOOOOO </h1>
-    <div id="totoro" onclick= "displayvideo()" onclick= "displayvideo()" class = "totoro">
+    <h1 id="text" onmouseover = "bigger"> My Neighbor Totoro </h1>
+    <div id="totoro" onclick= "displayvideo()" class = "totoro" onmouseout = "playmusic()">
       <img src="totoro.png">
+    </div>
+
+    <div id="funfun" class="funfun">
+      <img src="funfun.jpg">
     </div>
 
     <div id="introVideo" class = "introVideo">
@@ -18,6 +22,11 @@
         <source src="intro.mp4" type="video/mp4">
  </video>
     </div>
+
+    <audio id="music">
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
 
     <script src="script.js"></script>
 
