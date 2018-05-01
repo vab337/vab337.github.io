@@ -8,6 +8,7 @@ funfun.addEventListener("mouseout", playmusic)
 
 function playmusic() {
   music.play()
+  document.body.style.backgroundColor = "LightBlue";
 }
 
 function displayvideo() {
@@ -26,5 +27,4 @@ text.addEventListener("mouseover",bigger)
 function bigger() {
   text.style.fontSize = "100px"
   text.style.color = "crimson"
-
 }
