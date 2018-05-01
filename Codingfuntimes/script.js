@@ -1,10 +1,10 @@
 let totoro = document.getElementById('totoro')
 let introVideo = document.getElementById('introVideo')
 let text = document.getElementById('text')
-let music = document.getElementById('music')
+let funfun = document.getElementById('funfun')
 
 
-totoro.addEventListener("mouseout", playmusic)
+funfun.addEventListener("mouseout", playmusic)
 
 function playmusic() {
   music.play()
