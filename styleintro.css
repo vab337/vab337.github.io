@@ -35,7 +35,7 @@ body {
   cursor: pointer;
   background-color: white;
   color: black;
-  transition: 0.5s linear;
+  transition: 1s linear;
 }
 
 .commlab {

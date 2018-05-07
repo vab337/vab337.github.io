@@ -3,8 +3,23 @@ body {
 }
 
 .intro {
-  display: none;
+  display: none
 }
+
+.title{
+  font-size: 30px;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.title p {
+  font-size: 12px;
+}
+
+.commlab{
+  text-align: center;
+}
+
 
 .mff a {
   color: orange;
