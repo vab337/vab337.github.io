@@ -2,11 +2,9 @@ body {
   font-family: 'Montserrat';
 }
 
-.notfun a {
-  color: black;
-
+.intro {
+  display: none;
 }
-
 
 .mff a {
   color: orange;

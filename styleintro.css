@@ -1,0 +1,43 @@
+body {
+  font-family: 'Montserrat';
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+
+.intro {
+  margin: 20%;
+  margin-top: 15%;
+}
+
+.person {
+  font-size: 16px;
+  text-align: right;
+}
+
+.description {
+  text-align: center;
+  margin-top: 10%;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.vango {
+  outline: 2px solid white;
+  margin-right: 40%;
+  margin-left: 40%;
+  margin-top: 2%;
+  text-align: center;
+  padding: 1%;
+}
+
+.vango:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  transition: 0.5s linear;
+}
+
+.commlab {
+  display: none;
+}
