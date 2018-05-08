@@ -38,15 +38,4 @@ function draw(){ //happens every frame
     ballX = mouseX;
     ballY = mouseY;
   }
-
-  textFont("Montserrat");
-  textAlign(CENTER);
-  fill(255,255,255);
-
-  textSize(50);
-  text('Welcome to my website!', windowWidth/2, 300);
-
-  rectMode(CENTER);
-  textSize(30);
-  text("I'm Van and I'm an Arts student who is forever interested in funny and goofy things. Curious what funny and goofy things I did in Communications Lab?", windowWidth/2, 600, 600, 500);
 }

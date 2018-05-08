@@ -1,16 +1,17 @@
 body {
   font-family: 'Montserrat';
-  transition: 0.3s linear;
+  transition: 0.5s linear;
 }
 
 .intro {
-  display: none
+  display: none;
 }
 
 .title{
   font-size: 30px;
   text-align: center;
   margin-top: 2%;
+  color: black;
 }
 
 .title p {
@@ -27,6 +28,13 @@ body {
   margin: 0;
 }
 
+.sub {
+  display: none;
+  transition: 0.5s linear;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
 .sound a {
   color: blue;
 }
@@ -37,6 +45,22 @@ body {
 
 .video a {
   color: lightSeaGreen;
+}
+
+.videosub {
+  position: absolute;
+  top: 47%;
+  transition: 0.3s linear;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.animsub {
+  position: absolute;
+  top: 57%;
+  transition: 0.3s linear;
+  margin-left: 40%;
+  margin-right: 40%;
 }
 
 .animation a {
