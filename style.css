@@ -1,5 +1,6 @@
 body {
   font-family: 'Montserrat';
+  transition: 0.3s linear;
 }
 
 .intro {
@@ -23,7 +24,7 @@ body {
 
 .mff a {
   color: orange;
-
+  margin: 0;
 }
 
 .sound a {
