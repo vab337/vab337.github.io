@@ -3,6 +3,7 @@ let YSPEED = -5;
 let CIRCLESIZE = 80;
 let ballX, ballY, ballXSpeed, ballYSpeed;
 let colordivider;
+let button;
 
 function setup(){ //happens once
   var mycanvas = createCanvas(windowWidth, windowHeight)
@@ -11,7 +12,6 @@ function setup(){ //happens once
   ballXSpeed = XSPEED;
   ballYSpeed = YSPEED;
   background(255);
-  colordivider = random(2,3);
 }
 
 function draw(){ //happens every frame
@@ -29,7 +29,7 @@ function draw(){ //happens every frame
   }
 
   noStroke();
-  fill((ballX/colordivider),(ballY/colordivider),175,200);
+  fill((ballX/3),(ballY/3),175,200);
   ellipse(ballX, ballY, CIRCLESIZE, CIRCLESIZE);
 
   let distance = dist(mouseX, mouseY, ballX, ballY);
@@ -48,9 +48,5 @@ function draw(){ //happens every frame
 
   rectMode(CENTER);
   textSize(30);
-  text("I'm Van and I'm an Arts students that is forever interested in funny and goofy things. Curious what funny and goofy things I did in Communications Lab?", windowWidth/2, 600, 600, 500);
-  text("Click here", windowWidth/2, 550);
-
-
-
+  text("I'm Van and I'm an Arts student who is forever interested in funny and goofy things. Curious what funny and goofy things I did in Communications Lab?", windowWidth/2, 600, 600, 500);
 }

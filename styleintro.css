@@ -1,24 +1,23 @@
-body {
+
+.home {
   font-family: 'Montserrat';
   color: white;
-  font-size: 20px;
-}
+  font-size: 30px;
 
-.intro {
-  margin: 20%;
-  margin-top: 15%;
-}
-
-.person {
-  font-size: 16px;
-  text-align: right;
-}
-
-.description {
+  position: absolute;
+  top: 550px;
+  left: 600px;
   text-align: center;
-  margin-top: 10%;
-  font-size: 14px;
-  font-style: italic;
+
+}
+
+
+a:link {
+    text-decoration: underline;
+}
+
+a:visited {
+  color: white;
 }
 
 .vango {
