@@ -1,5 +1,6 @@
 body {
-  font-family: "Montserrat"
+  font-family: "Montserrat";
+  margin: 0;
 }
 
 .title {
@@ -25,7 +26,7 @@ body {
   width: 30%;
   color: black;
   font-size: 18px;
-  margin: 1%;
+  margin: 2%;
   padding: 1%;
   transition: 0.3s linear;
 }
