@@ -37,7 +37,7 @@ function displayinfoc3() {
 
 function displayinfoa2() {
   name.innerHTML = "A2 - Computational Research Building";
-  description.innerHTML = "";
+  description.innerHTML = "Center for Prototype Climate Modeling </br> Center for Global Sea Level Change </br> Center for Cyber Security	</br> Center for Space Science </br> Computational Approaches to Modeling Language Lab";
 }
 
 function displayinfoa3() {
@@ -56,6 +56,6 @@ function displayinfoa5() {
 }
 
 function displayinfoa6() {
-  name.innerHTML = "A6 - Humanities Building/NYUAD Institute Conference Center";
-  description.innerHTML = "Home of the NYUAD Institute, and where distinguished international thinkers come to exchange ideas and engage with the community. The building has a 300-seat lecture hall, 180-seat auditorium, meeting rooms, and spacious entrance lobby.";
+  name.innerHTML = "A6 - Arts and Humanities Building";
+  description.innerHTML = "Library of Arabic Literature";
 }
