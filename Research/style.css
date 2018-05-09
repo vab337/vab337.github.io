@@ -1,0 +1,39 @@
+body {
+  font-family: "Montserrat"
+}
+
+.title {
+  text-align: center;
+  font-size: 50px;
+  color: black;
+  background-color: #f4cd30;
+  padding: 1%;
+  font-weight: 650;
+}
+
+.map {
+  width: 60%;
+  padding: 2%;
+  padding-top: 5%;
+  float: left;
+}
+
+.info {
+  display: inline-block;
+  float: right;
+  background-color: #f4cd30;
+  width: 30%;
+  color: black;
+  font-size: 18px;
+  margin: 1%;
+  padding: 1%;
+  transition: 0.3s linear;
+}
+
+.info h2 {
+  font-weight: 400;
+}
+
+.building {
+  cursor: pointer;
+}
