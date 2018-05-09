@@ -6,6 +6,8 @@ let a3 = document.getElementById('A3')
 let a4 = document.getElementById('A4')
 let a5 = document.getElementById('A5')
 let a6 = document.getElementById('A6')
+let d2 = document.getElementById('D2')
+
 
 let name = document.getElementById('name')
 let description = document.getElementById('description')
@@ -19,6 +21,8 @@ a3.addEventListener("click", displayinfoa3)
 a4.addEventListener("click", displayinfoa4)
 a5.addEventListener("click", displayinfoa5)
 a6.addEventListener("click", displayinfoa6)
+d2.addEventListener("click", displayinfod2)
+
 
 function displayinfoc1() {
   name.innerHTML = "C1 - Experimental Research Building";
@@ -58,4 +62,9 @@ function displayinfoa5() {
 function displayinfoa6() {
   name.innerHTML = "A6 - Arts and Humanities Building";
   description.innerHTML = "Library of Arabic Literature";
+}
+
+function displayinfod2() {
+  name.innerHTML = "East Dining Hall";
+  description.innerHTML = "Food Waste Research";
 }
