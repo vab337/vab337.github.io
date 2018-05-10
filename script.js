@@ -29,7 +29,7 @@ function mffover() {
 }
 
 function soundover() {
-  document.body.style.backgroundColor = "blue"
+  document.body.style.backgroundColor = "#1b37e8"
   sound.style.color = "white"
   mff.style.visibility = "hidden"
   comics.style.visibility = "hidden"
