@@ -41,7 +41,7 @@ function displayinfoc3() {
 
 function displayinfoa2() {
   name.innerHTML = "A2 - Computational Research Building";
-  description.innerHTML = "Center for Prototype Climate Modeling </br> Center for Global Sea Level Change </br> Center for Cyber Security	</br> Center for Space Science </br> Computational Approaches to Modeling Language Lab";
+  description.innerHTML = "<ul> Center for Prototype Climate Modeling </ul> <ul> Center for Global Sea Level Change </ul> <ul> Center for Cyber Security	</ul> <ul> Center for Space Science </ul> <ul> Computational Approaches to Modeling Language Lab </ul> <ul> Teaching, Learning and Development Lab </ul>";
 }
 
 function displayinfoa3() {
@@ -56,12 +56,12 @@ function displayinfoa4() {
 
 function displayinfoa5() {
   name.innerHTML = "A5 - Social Science Building";
-  description.innerHTML = "";
+  description.innerHTML = "<ul> Center for Technology and Economic Development </ul> <ul> Global TIES for Children </ul> <ul> eARThumanities Research Initiative </ul> <ul> Narrative Technologies and Spatial Installations Lab </ul>";
 }
 
 function displayinfoa6() {
   name.innerHTML = "A6 - Arts and Humanities Building";
-  description.innerHTML = "Library of Arabic Literature";
+  description.innerHTML = "<ul> Library of Arabic Literature </ul> <ul> Humanities Research Fellowship Program </ul> <ul> Social Science Experimental Lab </ul> <ul> Dhakira Center for Heritage Studies </ul> <ul> Falconry Research Project";
 }
 
 function displayinfod2() {
