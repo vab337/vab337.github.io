@@ -38,3 +38,9 @@ body {
 .building {
   cursor: pointer;
 }
+
+.twitter-timeline {
+  float: right;
+  margin: 2%;
+  padding: 1%;
+}
