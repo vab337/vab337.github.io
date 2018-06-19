@@ -1,0 +1,48 @@
+.schedule {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.title {
+  text-align: center;
+  font-family: "Helvetica";
+  font-weight: 700;
+}
+
+.date {
+  font-family: "Vesper Libre";
+  margin: 0;
+  font-size: 40px;
+  color: #ff6016;
+}
+
+.in-class h2, .homework h2 {
+  font-family: "Fjalla One";
+  color: #ff6016;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.homework div {
+  margin-left: 2%;
+  font-family: "IBM Plex Sans";
+  font-size: 16px;
+}
+
+.homework h3 {
+  font-family: "Fjalla One";
+  color: #051860;
+  font-size: 20px;
+}
+
+.schedule a:link {
+  color: black;
+}
+
+.schedule a:visited {
+  color: black
+}
+
+.schedule a:hover {
+  color: #ff6016;
+}
