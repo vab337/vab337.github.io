@@ -1,0 +1,98 @@
+//projects-page
+$heading-font: "IBM Plex Sans";
+$subtitle-font: "Roboto";
+$menu-color: #000000;
+$background-color: #FFFFFF;
+
+@import "nav-bar";
+
+
+//quote styling
+
+.page-title {
+  font: {
+    family: "IBM Plex Serif";
+    size: 1.2em;
+    weight: 300;
+    style: italic;
+  }
+  color: black;
+  text-align: center;
+  margin-top: 10%;
+
+  span {
+    font-size: 0.8em;
+    position: relative;
+    top: -5px;
+  }
+}
+
+//end of quote styling
+
+//workItem {}
+.workItem {
+  display: inline-block;
+  width: 20%;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+//workItem-picture styling
+.workItem-picture {
+  overflow: hidden;
+  margin-top: 100px;
+}
+
+.workItem-picture img {
+  height: 200%;
+  overflow: hidden;
+}
+
+//workItem-title styling
+.workItem-title {
+  width: 240px;
+  height: 54px; //2 lines of text
+  margin-right: 0px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+//workItem-list link styling
+.workItem-list a {
+  &:link {
+    text-decoration: none;
+    font-family: $heading-font;
+    color: $menu-color;
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+
+  &:visited {
+    text-decoration: none;
+    font-family: $heading-font;
+    color: $menu-color;
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+
+}
+
+//hover effect styling
+.workItem-picture {
+  transition: all 0.3s ease;
+
+}
+.workItem-picture:hover {
+  transform: translate(0px, -10px);
+}
+
+.workItem:hover {
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+
+//footer styling
+.footer {
+  height: 100px;
+}

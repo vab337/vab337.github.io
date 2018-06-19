@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> About - Van Anh Bui </title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:300,400,300i" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../style-about.css">
+  <meta charset="utf-8">
+</head>
+
+<body>
+
+  <div class = "title">
+    <a href="../index.html">  Van Anh Bui </a>
+  </div>
+
+  <div class = "nav-menu">
+    <div class = "design">
+      <a href="../design/index-design.html"> Design </a>
+    </div>
+    <div class = "other">
+      <a href="../other/index-other.html"> Other </a>
+    </div>
+    <div class = "monologue">
+      <a href="../monologue/index-mono.html"> Monologue </a>
+    </div>
+    <div class = "about">
+      <a style="opacity:1;" href="../about/index-about.html"> About </a>
+    </div>
+  </div>
+
+<div class="info-container">
+    <div class="profile-pic-container">
+      <img id="profile-pic" src="cup.jpg" onmouseover="changeimg" onmouseout="changebackimg">
+    </div>
+
+    <div class="name">
+      Van Anh Bui
+    </div>
+
+    <div class="about-info">
+        <div class="bio-info">
+            Hi! My name is Van Anh Bui, but just call me Van. I’m a Vietnamese, currently studying Visual Arts at New York University Abu Dhabi in the UAE.
+          </br> </br>
+            For a few minutes at the start of each semester when I have to introduce myself, I’ll be a Visual Arts major. But for the rest of the time, I’m just a person who is endlessly curious about design and crafts and intrigued by funny little things (and dance once in a while).
+          </br> </br>
+        </div>
+
+        <div class="contact-info">
+          Whatever I am doing, it is most likely not as interesting as talking to you! Please feel free to reach me at:
+          <br>
+          <div class="contact-link">
+          <a href="mailto:buivananh1999@gmail.com" target="_top">buivananh1999@gmail.com</a>
+          <hr>
+          <a href="tel:+971-56-589-1875"> +971 56 589 1875 (UAE) </a>
+          <hr>
+          <a href="tel:+84-949-788-000"> +84 949 788 000 (Vietnam) </a>
+          <hr>
+          </div>
+          I’ll take up any design jobs, and maybe also those that don’t involve designing :)
+        </div>
+    </div>
+
+
+
+    <div class="web-info">
+          <h4> About the website </h4>
+          <p>  The website is developed from scratch with HTML, CSS and Javascript. I used Sass to organize my CSS.
+          </p>
+          <p> The headings of the website are set in <span id="heading-font-1">IBM Plex Sans</span> and <span id="heading-font-2">IBM Plex Serif</span>.
+            The text is set in Helvetica light or Roboto light.
+          </p>
+    </div>
+</div>
+
+
+  <div class="footer">
+  </div>
+
+
+
+  <script>
+      let profilepic = document.getElementById('profile-pic')
+
+      profilepic.addEventListener("mouseover",changeimg)
+      profilepic.addEventListener("mouseout",changebackimg)
+
+      function changeimg() {
+        profilepic.src = "me.jpg"
+      }
+
+      function changebackimg() {
+        profilepic.src = "cup.jpg"
+      }
+  </script>
+  </body>
+</html>

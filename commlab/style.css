@@ -1,0 +1,100 @@
+body {
+  font-family: 'Montserrat';
+  transition: 0.5s linear;
+}
+
+.intro {
+  display: none;
+}
+
+.title{
+  font-size: 30px;
+  text-align: center;
+  margin-top: 2%;
+  color: black;
+}
+
+.title p {
+  font-size: 12px;
+}
+
+.commlab{
+  text-align: center;
+}
+
+
+.mff a {
+  color: orange;
+  margin: 0;
+}
+
+.sub {
+  display: none;
+  transition: 0.5s linear;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.sound a {
+  color: #1b37e8;
+}
+
+.comics a {
+  color: crimson;
+}
+
+.video a {
+  color: lightSeaGreen;
+}
+
+.videosub {
+  position: absolute;
+  top: 47%;
+  transition: 0.3s linear;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.animsub {
+  position: absolute;
+  top: 57%;
+  transition: 0.3s linear;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.animation a {
+  color: salmon;
+}
+
+.aboutme {
+  font-size: 50px;
+  text-align: center;
+  margin-top: -1%;
+}
+
+a {
+  font-size: 100px;
+  opacity: 0.5;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 1;
+    transition: opacity 0.5s linear;
+}
+
+.aboutme a {
+  color: #573ea0;
+  font-size: 30px;
+}
+
+span {
+  color: grey;
+  font-size: 12px;
+  font-family: 'Montserrat';
+  opacity:0.5;
+}

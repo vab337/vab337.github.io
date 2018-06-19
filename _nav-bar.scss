@@ -1,0 +1,82 @@
+// $heading-font: "IBM Plex Sans";
+// $text-font: "Helvetica";
+// $menu-color: #000000;
+// $background-color: #FFFFFF;
+// $credits-color: #2b7296; //blue gray
+// $secondary-color: #EF5350;//red
+
+body {
+  background-color: $background-color;
+}
+
+//nav-bar design
+.nav-menu {
+  font-family: $heading-font;
+  display: inline-block;
+  float: right;
+  width: 30%;
+  position: absolute;
+  top: 35px;
+  right: 15px;
+  div {
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+  }
+}
+
+.nav-menu a {
+  &:link {
+    text-decoration: none;
+    color:  $menu-color;
+    opacity: 0.5;
+  }
+
+  &:visited {
+    text-decoration: none;
+    color:  $menu-color;
+    opacity: 0.5;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+  transition: 0.5s linear;
+}
+
+.title a {
+  font: {
+    family: "IBM Plex Serif";
+  }
+  color: #4d7589; //blueish-gray
+
+  &:link {
+    text-decoration: none;
+  }
+
+  &:visited {
+    text-decoration: none;
+  }
+
+  //title change to red when hover
+  &:hover {
+    color: #EF5350; //red
+    transition: 0.5s ease;
+  }
+}
+
+.title {
+  font: {
+    family: "IBM Plex Serif";
+    size: 2em;
+  }
+  color: #f21818; //red
+  display: inline-block;
+  float: left;
+  width: 20%;
+  position: absolute;
+  top: 20px;
+  left: 35px;
+}
+
+//end of nav-bar design

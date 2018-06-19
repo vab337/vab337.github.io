@@ -1,0 +1,118 @@
+//projects-page
+$heading-font: "IBM Plex Sans";
+$subtitle-font: "Roboto";
+$menu-color: #000000;
+$background-color: #FFFFFF;//brighter than normal
+$credits-color: #2b7296; //blue gray
+$secondary-color: #EF5350;//red
+
+@import "nav-bar";
+//end of nav-bar design
+
+//essay block styling
+.monoItem-essay {
+  margin-top: 10%;
+  margin-left: 12%;
+  width: 45%;
+}
+
+
+.monoItem-title {
+  margin-top: 5%;
+  font: {
+    family: $heading-font;
+    size: 2.5em;
+    weight: 500;
+  }
+}
+
+.monoItem-date {
+  font: {
+    family: "IBM Plex Serif";
+    size: 1em;
+    style: italic;
+  }
+}
+
+.monoItem-content {
+  font: {
+    family: "Helvetica","Roboto";
+    size: 18px;
+    weight: 300;
+  }
+  line-height: 25px;
+}
+
+
+.credits {
+  margin: 0;
+  font: {
+    family:"IBM Plex Serif";
+    size: 0.8em;
+  }
+}
+
+.monoItem-content a {
+  &:link {
+    text-decoration: none;
+    color: $credits-color;
+  }
+
+  &:visited {
+    text-decoration: none;
+    color: $credits-color;
+  }
+
+  &:hover {
+    color:$secondary-color;
+    transition: 0.5s ease;
+  }
+}
+
+.endnote {
+  color: $secondary-color;
+  margin-right: 20%;
+  line-height: normal;
+  font: {
+    family: "IBM Plex Serif";
+    size: 0.8em;
+  }
+
+}
+
+.footer {
+  height: 200px;
+}
+
+.readothers {
+  float: right;
+  margin-right: 10%;
+  margin-top: -5%;
+  margin-left: 60%;
+  p {
+    font-family: $heading-font;
+    margin-bottom: 0;
+  }
+}
+
+.readothers a {
+  font-family: $heading-font;
+  font-size: 2em;
+  font-weight: 500;
+  color: black;
+  opacity: 0.5;
+  transition: 0.5s ease;
+
+  &:link {
+    text-decoration: none;
+  }
+
+  &:visited {
+    text-decoration: none;
+  }
+
+  &:hover {
+    opacity:1;
+  }
+
+}

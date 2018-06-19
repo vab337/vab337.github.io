@@ -1,0 +1,24 @@
+
+h1 {
+  text-align: center;
+}
+.totoro img {
+  width: 100px;
+  cursor: pointer;
+  margin-left: 40%;
+}
+
+.totoro {
+  margin-right: auto;
+  margin-left: auto;
+}
+.introVideo {
+display: none;}
+
+.funfun {
+  display: none;
+}
+
+.funfun img {
+  width: 100%;
+}

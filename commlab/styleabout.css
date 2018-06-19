@@ -1,0 +1,40 @@
+body {
+  font-family: 'Montserrat'
+}
+
+img {
+  transform: rotate(90deg);
+  margin-top: 5%;
+  margin-left: 3%;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.title{
+  font-size: 30px;
+  text-align: center;
+  margin-top: 2%;
+  color: black;
+}
+
+.title p {
+  font-size: 12px;
+}
+
+.aboutme {
+  font-size: 50px;
+  text-align: center;
+  margin-top:2%;
+  margin-bottom: 2%;
+  color: #573ea0;
+}
+
+.info {
+  display: inline-block;
+  float: right;
+  width: 40%;
+  margin-top:6%;
+  margin-right: 14%;
+}
