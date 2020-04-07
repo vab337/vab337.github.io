@@ -1,0 +1,77 @@
+:root {
+  --button-text-color: rgb(16, 28, 161);
+  --main-text-font: "Courier";
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.question {
+  font-family: var(--main-text-font);
+  color: rgb(224, 214, 13);
+  font-size: 1.2em;
+}
+
+.prompt2Button {
+  background: rgba(255, 255, 255, 0 );
+  font-family: var(--main-text-font);
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  margin-top: 5px;
+  padding: 5px;
+  color: white;
+  border: 2 px #fff;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.prompt2Button:hover {
+  background-color: rgba(255, 255, 255);
+  color: var(--button-text-color);
+}
+
+.prompt2Button:active {
+    background-color: rgba(255, 255, 255);
+    transform: translateY(4px);
+  }
+
+
+.prompt4input {
+  background: rgba(255, 255, 255, 0 );
+  padding: 5px;
+  width: 20%;
+  height: 20px;
+  color: white;
+  margin:5px;
+  border: 2 px #fff;
+}
+
+input[type=text] {
+  font-family: var(--main-text-font);
+}
+
+.answer {
+  font-family: var(--main-text-font);
+  color: rgb(224, 214, 13);
+  font-size: 1.2em;
+}
+
+.recbutton {
+  box-sizing: border-box;
+  background: rgba(255, 255, 255);
+  font-family: "Courier New";
+  color: var(--button-text-color);
+  font-size: 1em;
+  text-align: center;
+  margin-top: 5px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+canvas {
+  display: block;
+}
