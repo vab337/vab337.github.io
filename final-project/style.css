@@ -8,6 +8,19 @@ html, body {
   padding: 0;
 }
 
+#instructions {
+  position: relative;
+  bottom: 60px;
+  background: rgba(255, 255, 255, 100 );
+  margin: auto;
+  font-family: var(--main-text-font);
+  color: var(--button-text-color);
+  text-align: center;
+  width: 40%;
+
+
+}
+
 .question {
   font-family: var(--main-text-font);
   color: rgb(224, 214, 13);
@@ -38,6 +51,10 @@ html, body {
     transform: translateY(4px);
   }
 
+#prompt3ques {
+  width: 40%;
+}
+
 
 .prompt4input {
   background: rgba(255, 255, 255, 0 );
@@ -51,6 +68,8 @@ html, body {
 
 input[type=text] {
   font-family: var(--main-text-font);
+  font-size: 18px;
+
 }
 
 .answer {

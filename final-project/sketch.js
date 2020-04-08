@@ -1,3 +1,4 @@
+let instructions;
 let canvas;
 let webcam;
 let record = false;
@@ -29,18 +30,21 @@ let itemNumber;
 
 
 
+
 function setup() {
-
-
   createCanvas(windowWidth, windowHeight);
   webcam = createCapture(VIDEO);
   webcam.hide();
 
   rectMode(CENTER);
-  button = createButton('Record');
+  instructions = createP('Press ENTER to start and move onto next prompt');
+  instructions.id('instructions');
+
+
+  button = createButton('see yourself');
   button.addClass("recbutton");
   button.mousePressed(startRec);
-  button.position(width/2-button.width/2-10, height/2+120);
+  button.position(width/2-button.width/2-40, height/2+120);
 
 
   speech = new p5.SpeechRec('en-US', gotSpeech);
@@ -88,7 +92,7 @@ function draw() {
 
   if (prompt1) {
     qy = ay; //only for prompt 1
-    prompt1ques = createP('What are you eating?');
+    prompt1ques = createP('What are you eating? 🎤');
     prompt1ques.addClass('question');
 
     prompt1ques.position(qx, qy);
@@ -111,7 +115,8 @@ function draw() {
 
   if (prompt3) {
     updateQpos();
-    prompt3ques = createP('Describe what you have in front of you, for 30 second, non stop');
+    prompt3ques = createP('Describe what you have in front of you, for 30 second, non stop 🎤');
+    prompt3ques.id('prompt3ques');
     prompt3ques.addClass('question');
     prompt3ques.position(qx, qy+20) //just for this prompt bc of random button
     updateApos();
@@ -122,10 +127,10 @@ function draw() {
     updateQpos();
     prompt4ques = createP('How many items do you have in total?');
     prompt4ques.addClass('question');
-    prompt4ques.position(qx, qy)
+    prompt4ques.position(qx, qy+20)
     updateApos();
 
-    prompt4input.position(qx, qy+40);
+    prompt4input.position(qx, qy+60);
     prompt4input.show();
     prompt4input.input(prompt4inputEvent);
     prompt4 = !prompt4;
