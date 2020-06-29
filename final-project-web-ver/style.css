@@ -1,0 +1,231 @@
+html {
+  color:white;
+  background-color: black;
+  /* background-image: linear-gradient(to right, teal , salmon); */
+  font-family: 'Manrope', sans-serif;
+  font-size: 20px;
+  margin: 0px;
+}
+
+p {
+  display: block;
+  margin: auto;
+}
+
+input[type=text] {
+  width: 15%;
+  height: 40px;
+  background-color: rgba(255,255,255,0);
+  color: white;
+  font-family: 'Manrope', sans-serif;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+
+}
+input:focus {
+    outline: none;
+    background-color: rgba(255,255,255,1);
+    color: black;
+    transition: 0.5s;
+}
+
+#nameText {
+  position: absolute;
+  top: 230px;
+  left: 30px;
+}
+
+#nameInput {
+  position: absolute;
+  top: 260px;
+  left: 30px;
+
+}
+
+/* #dob {
+  position: absolute;
+  top: 250px;
+  left: 30px;
+}
+
+#dobInput {
+  position: absolute;
+  top: 280px;
+  left: 30px;
+  display: block;
+} */
+
+#genText {
+  position:absolute;
+  top: 350px;
+  left: 30px;
+  display: block;
+}
+
+#genDrop {
+  position:absolute;
+  top: 380px;
+  left: 30px;
+  display: block;
+}
+
+#ageText {
+  position:absolute;
+  top: 460px;
+  left: 30px;
+}
+
+#ageSlider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  display: block;
+  position: absolute;
+  left: 30px;
+  top: 490px;
+  height: 2px;
+  margin-top: 25px;
+  width: 200px;
+}
+
+#ageSlider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 10px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  background: #ffffff; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+#ageSliderVal {
+  display: block;
+  position: absolute;
+  left: 19%;
+  top: 500px;
+}
+
+#nat {
+  position: absolute;
+  top: 230px;
+  right: 30px;
+}
+
+#natInput {
+  display: block;
+  position: absolute;
+  top: 260px;
+  right: 30px;
+}
+
+#occ {
+  position: absolute;
+  top: 350px;
+  right: 30px;
+}
+
+#occInput {
+  display: block;
+  position: absolute;
+  top: 380px;
+  right: 30px;
+
+}
+
+#randButton {
+  display: block;
+  position: absolute;
+  top: 470px;
+  right: 30px;
+  background-color: rgba(255,255,255,0);
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  color: white;
+}
+
+#randButton:hover {
+  background-color: rgba(255,255,255,0.3);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#randQuestion {
+  display: block;
+  position: absolute;
+  top: 500px;
+  right: 30px;
+
+}
+
+#randInput {
+  display: block;
+  position: absolute;
+  top: 530px;
+  right: 30px;
+
+}
+
+#saveBtn {
+  position: absolute;
+  margin: auto;
+  width: 170px;
+  left: 43%;
+  top: 90%;
+  background-color: rgba(255,255,255,0);
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  font-family: 'Manrope', sans-serif;
+  font-size: 20px;
+  color: white;
+  opacity: 0.7;
+  transition: 0.5s;
+
+
+}
+
+#saveBtn:hover {
+  background-color: rgba(255,255,255,0.3);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+img {
+  width: 576px;
+  height: 432px;
+}
+
+#feed0 {
+  position: absolute;
+
+}
+
+#feed1 {
+  position: absolute;
+  right:0px;
+}
+
+#feed2 {
+  position: absolute;
+  top: 480px;
+  left: 0px;
+
+}
+
+#feed3 {
+  position: absolute;
+  top: 480px;
+  right:0px;
+}
+
+
+#feed5 {
+  position: absolute;
+  left: 320px;
+  top: 480px;
+
+}
