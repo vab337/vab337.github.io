@@ -1,0 +1,17 @@
+body {
+  background: black;
+}
+
+#pinwheel {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+
+}
+
+#clickhere {
+  display: block;
+  text-align: center; 
+  /* margin-top: 50%; */
+}
