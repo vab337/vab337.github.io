@@ -1,0 +1,43 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times', serif;
+}
+
+canvas {
+  display: block;
+}
+
+#welcomeText {
+  position: absolute;
+  color: white;
+  left: 20%;
+  top: 40%;
+  font-size: 1.2em;
+}
+
+#yesButton {
+  position: absolute;
+  text-decoration: none;
+  left: 50%;
+  top: 50%;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  font-size: 1.2em;
+  font-family: 'Times', serif;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  cursor: wait;
+}
+
+
+#yesButton:hover {
+  outline: none;
+  background-color: rgba(255,255,255,1);
+  color: black;
+  transition: 0.5s;
+  cursor: wait;
+}
