@@ -2,7 +2,9 @@ html, body {
   margin: 0;
   padding: 0;
   /* font-family: 'Times', serif; */
-  font-family: 'Asset', cursive;
+  /* font-family: 'Asset', cursive; */
+  font-family: 'Gothic A1', sans-serif;
+
 }
 
 canvas {
@@ -25,6 +27,7 @@ p {
 
 .productName:hover {
   background-color: blue;
+  color: white;
   transition: 0.5s;
   border-style: solid;
   border-width: 1px;

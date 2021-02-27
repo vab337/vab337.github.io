@@ -24,10 +24,10 @@ function setup() {
 }
 
 function draw() {
+
   // image(camfeed, 0, 0, windowWidth, windowHeight);
 
   background(0);
-
 
   camfeed.loadPixels();
   loadPixels();
@@ -50,12 +50,12 @@ function brightMap() {
 
       if (bright > 150) {
         r = 255;
-        g = 0;
-        b = 0;
+        g = 1;
+        b = 255;
         a = 255;
       } else if (bright > 70 && bright < 150) {
-        r = 0;
-        g = 0;
+        r = 20;
+        g = 7;
         b = 255;
         a = 255;
       } else {
@@ -66,7 +66,10 @@ function brightMap() {
       pixels[index + 2] = b;
       pixels[index + 3] = a;
 
+
     }
   }
+
   updatePixels();
+
 }
