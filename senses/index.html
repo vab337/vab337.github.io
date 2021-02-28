@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- <script src="p5.js"></script>
+    <script src="p5.sound.min.js"></script> -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+
+</head>
+
+<body>
+
+  <div class="promptBlock">
+    <button type="button" class="button" id="b1" onclick="displayPrompt(1)"> Prompt </button>
+    <p class="prompt" id="p1"> look straight ahead. tell me what is on top of your monitor. </p>
+    <input type="text" class="input" id="i1"> </input>
+  </div>
+
+  <div class="promptBlock">
+    <button type="button" class="button" id="b2" onclick="displayPrompt(2)"> Prompt </button>
+    <p class="prompt" id="p2"> tilt your head as far back as possible. tell me what you see: colors, shapes, things. </p>
+    <input type="text" class="input" id="i2"> </input>
+  </div>
+
+  <div class="promptBlock">
+    <button type="button" class="button" id="b3" onclick="displayPrompt(3)"> Prompt </button>
+    <p class="prompt" id="p3"> look right. tell me what you see. </p>
+    <input type="text" class="input" id="i3"> </input>
+  </div>
+
+  <div class="promptBlock">
+    <button type="button" class="button" id="b4" onclick="displayPrompt(4)"> Prompt </button>
+    <p class="prompt" id="p4"> look left. what do you see? </p>
+    <input type="text" class="input" id="i4"> </input>
+  </div>
+
+  <div class="promptBlock">
+    <button type="button" class="button" id="b5" onclick="displayPrompt(5)"> Prompt </button>
+    <p class="prompt" id="p5"> tell me about what is behind you, without turning around. </p>
+    <input type="text" class="input" id="i5"> </input>
+  </div>
+
+  <div class="promptBlock">
+    <button type="button" class="button" id="b6" onclick="displayPrompt(6)"> Prompt </button>
+    <p class="prompt" id="p6"> find a corner. what is there? </p>
+    <input type="text" class="input" id="i6"> </input>
+  </div>
+
+  <div class="promptBlock">
+    <button type="button" class="button" id="b7" onclick="displayPrompt(7)"> Prompt </button>
+    <p class="prompt" id="p7"> find another corner. is there anything there? </p>
+    <input type="text" class="input" id="i7"> </input>
+  </div>
+
+  <div class="promptBlock">
+    <button type="button" class="button" id="b8" onclick="displayPrompt(8)"> Prompt </button>
+    <p class="prompt" id="p8"> look away from the screen. describe the very first thing you see. </p>
+    <input type="text" class="input" id="i8"> </input>
+  </div>
+
+  <div class="promptBlock">
+    <button type="button" class="button" id="b9" onclick="displayPrompt(9)"> Prompt </button>
+    <p class="prompt" id="p9"> tell me about what you are hearing </p>
+    <input type="text" class="input" id="i9"> </input>
+  </div>
+
+  <div class="promptBlock">
+    <button type="button" class="button" id="b10" onclick="displayPrompt(10)"> Prompt </button>
+    <p class="prompt" id="p10"> rub your thumb and index finger against each other. describe. </p>
+    <input type="text" class="input" id="i10"> </input>
+  </div>
+
+  <div class="promptBlock">
+    <button type="button" class="button" id="b11" onclick="displayPrompt(11)"> Prompt </button>
+    <p class="prompt" id="p11"> tell me about a rectangular thing you can see </p>
+    <input type="text" class="input" id="i11"> </input>
+  </div>
+
+  <div class="promptBlock">
+    <button type="button" class="button" id="b12" onclick="displayPrompt(12)"> Prompt </button>
+    <p class="prompt" id="p12"> tell me about something that sounds red </p>
+    <input type="text" class="input" id="i12"> </input>
+  </div>
+
+  <div class="promptBlock">
+    <button type="button" class="button" id="b13" onclick="displayPrompt(13)"> Prompt </button>
+    <p class="prompt" id="p13"> tell me about something that tastes green </p>
+    <input type="text" class="input" id="i13"> </input>
+  </div>
+
+  <div class="promptBlock">
+    <button type="button" class="button" id="b14" onclick="displayPrompt(14)"> Prompt </button>
+    <p class="prompt" id="p14"> tell me about something that smells blue </p>
+    <input type="text" class="input" id="i14"> </input>
+  </div>
+
+  <div class="promptBlock">
+    <button type="button" class="button" id="b15" onclick="displayPrompt(15)"> Prompt </button>
+    <p class="prompt" id="p15"> what color do you see when you close your eyes? </p>
+    <input type="text" class="input" id="i15"> </input>
+  </div>
+
+
+  <div class="promptBlock">
+    <button type="button" class="button" id="b16" onclick="displayPrompt(16)"> Prompt </button>
+    <p class="prompt" id="p16"> rest for 10 seconds </p>
+    <input type="text" class="input" id="i16"> </input>
+  </div>
+
+
+  <div class="promptBlock">
+    <button type="button" class="button" id="b17" onclick="displayPrompt(17)"> Prompt </button>
+    <p class="prompt" id="p17"> breathe </p>
+    <input type="text" class="input" id="i17"> </input>
+  </div>
+
+
+  <div class="promptBlock">
+    <button type="button" class="button" id="b18" onclick="displayPrompt(18)"> Prompt </button>
+    <p class="prompt" id="p18"> describe what you feel touching the keyboard </p>
+    <input type="text" class="input" id="i18"> </input>
+  </div>
+
+
+  <div class="promptBlock">
+    <button type="button" class="button" id="b19" onclick="displayPrompt(19)"> Prompt </button>
+    <p class="prompt" id="p19"> is there something that moves around you? tell me about it. </p>
+    <input type="text" class="input" id="i19"> </input>
+  </div>
+
+  <div class="promptBlock">
+    <button type="button" class="button" id="b20" onclick="displayPrompt(20)"> Prompt </button>
+    <p class="prompt" id="p20"> go to the closest window. then go back. (if you are inside) </p>
+    <input type="text" class="input" id="i20"> </input>
+  </div>
+
+  <div class="promptBlock">
+    <button type="button" class="button" id="b21" onclick="displayPrompt(21)"> Prompt </button>
+    <p class="prompt" id="p21"> how many windows do you currently have opened on the computer? </p>
+    <input type="text" class="input" id="i21"> </input>
+  </div>
+
+
+
+
+
+
+
+  <script src="sketch.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    background-color: black;
+  }
+
+  #divforwait {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  #myDiv {
+    display: none;
+    text-align: center;
+    color: white;
+    position: absolute;
+    left: 48%;
+    top: 48%;
+  }
+
+  a:visited {
+    color: blue;
+  }
+  a:hover {
+    color: white;
+    transition: 0.5s;
+  }
+
+
+  }
+</style>
+</head>
+
+<body onload="myFunction()" style="margin:0;">
+
+  <div id=divforwait> </div>
+
+  <div style="display:none;" id="myDiv">
+    <a href=index2.html>
+      <p>Assets loaded</p>
+    </a>
+  </div>
+
+
+  <script>
+  document.getElementById("divforwait").style.cursor = "wait";
+
+  var myVar;
+
+  function myFunction() {
+    myVar = setTimeout(showPage, 12000);
+  }
+
+  function showPage() {
+    document.getElementById("divforwait").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+  }
+
+
+  </script>
+</body>
+
+</html
