@@ -15,3 +15,27 @@ body {
   margin: auto;
   width: 60%;
 }
+
+.button {
+  padding: 12px;
+  background: white;
+  border: solid 2px black;
+  border-radius: 20px;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: black;
+  line-height:12px;
+  text-decoration: none;
+}
+
+.button:hover {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5);
+  transition: 0.2s;
+}
+
+#homegrowth {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}

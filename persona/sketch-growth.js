@@ -16,7 +16,6 @@ let soundBtn;
 let transBtn;
 let trans;
 
-
 function preload() {
   skin = loadImage('skin2.jpeg');
 }
@@ -94,6 +93,7 @@ function setup() {
   trans.style.display = "none";
   transBtn = document.getElementById('transBtn');
   transBtn.onclick = toggletrans;
+
 }
 
 function gotData(data) {

@@ -12,6 +12,34 @@ body {
   margin-left: 10px;
 }
 
+.button {
+  padding: 12px;
+  background: white;
+  border: solid 2px black;
+  border-radius: 20px;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: black;
+  line-height:12px;
+  text-decoration: none;
+}
+
+.button:hover {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5);
+  transition: 0.2s;
+}
+
+#home {
+  padding: 6px;
+}
+
+#personatitle {
+  margin: 10px;
+  font-family: 'Neuton', serif;
+  font-weight: 300;
+  font-size: 30px;
+}
 
 #inputSection {
 display: block;
@@ -41,8 +69,6 @@ text-align: center;
   cursor: pointer;
 }
 
-
-
 #transBtn {
   position: absolute;
   left: 1%;
@@ -68,30 +94,8 @@ text-align: center;
 
 }
 
-.button {
-  padding: 12px;
-  background: white;
-  border: solid 2px black;
-  border-radius: 20px;
-  font-family: 'Libre Franklin', sans-serif;
-  font-size: 20px;
-  color: black;
-  line-height:12px;
-  text-decoration: none;
-}
-
-.button:hover {
-  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5);
-  transition: 0.2s;
-}
-
-#home {
-  padding: 6px;
-}
-
-#personatitle {
-  margin: 10px;
-  font-family: 'Neuton', serif;
-  font-weight: 300;
-  font-size: 30px;
+#homegrowth {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 }
