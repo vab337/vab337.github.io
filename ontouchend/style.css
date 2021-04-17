@@ -1,0 +1,17 @@
+body {
+  background: #000;
+  margin: 0px;
+}
+
+#instructions {
+  padding: 50px;
+  text-align: center;
+  font-family: 'Libre Franklin', sans-serif;
+  color: white;
+
+}
+
+#myVideo {
+  margin: auto;
+  width: 60%;
+}

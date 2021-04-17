@@ -1,0 +1,49 @@
+body {
+  background-color: black; }
+
+.nav-menu {
+  font-family: "IBM Plex Sans";
+  display: inline-block;
+  float: right;
+  width: 30%;
+  position: absolute;
+  top: 35px;
+  right: 15px; }
+  .nav-menu div {
+    display: inline-block;
+    width: 32%;
+    text-align: center; }
+
+.nav-menu a {
+  transition: 0.5s linear; }
+  .nav-menu a:link {
+    text-decoration: none;
+    color: #ffffff;
+    opacity: 0.5; }
+  .nav-menu a:visited {
+    text-decoration: none;
+    color: #ffffff;
+    opacity: 0.5; }
+  .nav-menu a:hover {
+    opacity: 1; }
+
+.title a {
+  font-family: "IBM Plex Serif";
+  color: #f21818; }
+  .title a:link {
+    text-decoration: none; }
+  .title a:visited {
+    text-decoration: none; }
+
+.title {
+  font-family: "IBM Plex Serif";
+  font-size: 2em;
+  color: #f21818;
+  display: inline-block;
+  float: left;
+  width: 20%;
+  position: absolute;
+  top: 20px;
+  left: 30px; }
+
+/*# sourceMappingURL=style.css.map */

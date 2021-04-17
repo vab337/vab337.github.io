@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id=instructions>
+    Headphones and Fullscreen recommended
+  </div>
+
+  <div id="myVideo"></div>
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+
+<script>
+  var options = {
+    url: "https://vimeo.com/538001261",
+    width: 800,
+    byline: false,
+    portrait: false,
+    title: false,
+    responsive:	true
+  };
+
+  var videoPlayer = new Vimeo.Player('myVideo', options);
+
+  videoPlayer.on('play', function() {
+    console.log('Played the video');
+  });
+</script>
+
+  <!-- https://player.vimeo.com/video/538001261 -->
+
+</body>
+
+</html>
