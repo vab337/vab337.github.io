@@ -16,6 +16,11 @@ body {
   width: 60%;
 }
 
+#navBar {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
 .button {
   padding: 12px;
   background: white;
@@ -34,8 +39,13 @@ body {
   transition: 0.2s;
 }
 
-#homegrowth {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
+#home {
+  padding: 6px;
+}
+
+#personatitle {
+  margin: 10px;
+  font-family: 'Neuton', serif;
+  font-weight: 300;
+  font-size: 30px;
 }
