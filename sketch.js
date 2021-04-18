@@ -27,3 +27,14 @@ var x = setInterval(function() {
     document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+window.addeventasync = function(){
+    addeventatc.settings({
+        appleical  : {show:false, text:"Apple Calendar"},
+        google     : {show:false, text:"Google"},
+        office365  : {show:false, text:"Office 365 <em>(online)</em>"},
+        outlook    : {show:false, text:"Outlook"},
+        outlookcom : {show:false, text:"Outlook.com <em>(online)</em>"},
+        yahoo      : {show:false, text:"Yahoo <em>(online)</em>"}
+    });
+};

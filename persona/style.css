@@ -30,6 +30,10 @@ body {
   transition: 0.2s;
 }
 
+.button:focus {
+  outline: none;
+}
+
 #home {
   padding: 6px;
 }
@@ -69,6 +73,18 @@ text-align: center;
   cursor: pointer;
 }
 
+#comeback {
+  position: absolute;
+  width: 93%;
+  bottom: 1%;
+  color: white;
+  text-align: center;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* ----------------------------------------- */
 #transBtn {
   position: absolute;
   left: 1%;
@@ -78,12 +94,17 @@ text-align: center;
 
 #transcript {
   width: 20vw;
+  height: 500px;
   color: white;
   position:absolute;
+  overflow: scroll;
   left: 10px;
   top: 70px;
   font-family: 'Neuton', serif;
   font-size: 16px;
+}
+
+#trans-text {
 }
 
 #soundBtn {

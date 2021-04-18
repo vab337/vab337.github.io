@@ -108,12 +108,17 @@ body {
   font-size: 20px;
   padding-top: 7px;
   padding-bottom: 7px;
+  cursor: pointer;
 }
 
 .addCal:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 186, 141, 0.5);
   transition: 0.2s;
 }
+
+.addeventatc_dropdown {padding:6px 0px;}
+.addeventatc_dropdown .copyx {display:none;}
+
 
 /* --------------------------Home page style ends ------------------------- */
 

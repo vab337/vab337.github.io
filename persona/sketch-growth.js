@@ -98,9 +98,9 @@ function setup() {
 
 function gotData(data) {
 
-  // for (var i=0; i<allinputs.length; i++) {
-  //     allinputs[i].remove();
-  // }
+  for (var i=0; i<allinputs.length; i++) {
+      allinputs[i].remove();
+  }
 
   var inputs = data.val();
   var keys = Object.keys(inputs); //get the keys of all the objects
