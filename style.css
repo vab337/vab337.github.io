@@ -6,6 +6,8 @@ body {
   margin: 0px;
 }
 
+
+
 .wrapper {
   display: grid;
   height: 100vh;
@@ -100,7 +102,7 @@ body {
   bottom: 20px;
 }
 
-.addCal {
+/* .addCal {
   display:inline-block;
   background: #00D4BB;
   border-radius: 25px;
@@ -117,7 +119,7 @@ body {
 }
 
 .addeventatc_dropdown {padding:6px 0px;}
-.addeventatc_dropdown .copyx {display:none;}
+.addeventatc_dropdown .copyx {display:none;} */
 
 
 /* --------------------------Home page style ends ------------------------- */
@@ -174,6 +176,23 @@ body {
 
 }
 
+.mobile {
+  display: none;
+}
+
 
 
 /* --------------------------Feedback page style ends ------------------------- */
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    display: none;
+  }
+  .about {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    padding: 20px;
+  }
+}
