@@ -12,7 +12,7 @@ let imgLayer;
 let hit = false;
 let imgYposinc=2;
 
-let images=['beach.jpg','beach2.jpg','beach3.jpg','beach4.jpg'];
+let images=['beach.jpg','beach2.jpg','beach3.jpg','beach4.jpg', 'beach5.jpg', 'beach6.jpg', 'beach7.jpg', 'beach8.jpg', 'beach9.jpg', 'beach10.jpg', 'beach11.jpg', 'beach12.jpg', 'beach13.jpg', 'beach14.jpg', 'beach15.jpg'];
 
 function preload() {
   img = loadImage(random(images));
