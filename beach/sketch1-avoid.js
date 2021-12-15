@@ -30,7 +30,7 @@ function draw() {
   for (let i = 0; i < 10; i++) {
     var ypos = mouseY;
     var ypos = floor(map(sin(angle), -1, 1, mouseY, mouseY + 25) + random(-10, 10));
-    wave.push(new Particle(mouseX + random(-30, 30), ypos));
+    wave.push(new Particle(mouseX + random(-100, 100), ypos));
     angle += 0.02;
   }
 
@@ -58,7 +58,6 @@ function Particle(x, y) {
   this.lifespan = 0;
 
   this.update = function() {
-    // var vy;
     this.y += vy;
     vy += 0.05; //0.05 (fine)
     if (this.y > y0 + 100) {
