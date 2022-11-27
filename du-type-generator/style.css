@@ -1,0 +1,217 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  color:white;
+  background-color: black;
+  font-family: 'FKGroteskNeue', sans-serif;
+}
+canvas {
+  display: block;
+}
+
+input[type=text] {
+  -webkit-appearance: none; /* Override default look */
+  width: 17%;
+  height: 40px;
+  background-color: rgba(255,255,255,0);
+  color: white;
+  font-family: 'FKGroteskNeue', sans-serif;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-bottom: 1px solid white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+}
+
+input:focus {
+  outline: none;
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+
+.titles {
+  display: block;
+  padding: 10px;
+  padding-left: 20px;
+  font-size: 14px;
+  color: black;
+  background-color: rgb(200,200,200);
+  width: 20vw;
+  position:absolute;
+  right:0%;
+  margin:0;
+}
+
+.h2 {
+  display: block;
+  padding: 10px;
+  padding-left: 0;
+  font-size: 14px;
+  color: white;
+  width: 20vw;
+  position:absolute;
+  right:0%;
+  margin:0;
+}
+
+.sliders {
+  -webkit-appearance: none;
+  width: 17%;
+  height: 1px;
+  background: #ffffff;
+  outline: none;
+  /* opacity: 0.7; */
+  -webkit-transition: .2s;
+  /* transition: opacity .2s; */
+}
+
+.sliders::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: white;
+  cursor: pointer;
+}
+
+.sliders::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: white;
+  cursor: pointer;
+}
+
+#txtInputP {
+  top: 0%;
+}
+
+#adjustP {
+  top: 20%;
+}
+
+
+#txtInput1{
+  display: block;
+  position: absolute;
+  left: 79vw;
+  top: 5%;
+}
+
+#txtInput2 {
+  display: block;
+  position: absolute;
+  left: 79vw;
+  top: 11%;
+}
+
+#adjust1 {
+  display: block;
+  position: absolute;
+  left: 79vw;
+  top: 25%;
+}
+
+#slider1 {
+  display: block;
+  position: absolute;
+  left: 79vw;
+  top: 30%;
+}
+
+#adjust2 {
+  display: block;
+  position: absolute;
+  left: 79vw;
+  top: 33%;
+}
+
+
+#slider2 {
+  display: block;
+  position: absolute;
+  left: 79vw;
+  top: 38%;
+}
+
+#adjust3 {
+  display: block;
+  position: absolute;
+  left: 79vw;
+  top: 41%;
+}
+
+#slider3 {
+  display: block;
+  position: absolute;
+  left: 79vw;
+  top: 46%;
+}
+
+#rectP {
+  top: 51%;
+}
+
+#rectWP {
+  display: block;
+  position: absolute;
+  left: 79vw;
+  top: 56%;
+}
+
+#rectW {
+  display: block;
+  position: absolute;
+  left: 79vw;
+  top: 61%;
+}
+
+#rectHP {
+  display: block;
+  position: absolute;
+  left: 79vw;
+  top: 64%;
+}
+
+#rectH {
+  display: block;
+  position: absolute;
+  left: 79vw;
+  top: 69%;
+}
+
+#resP {
+  top: 74%;
+}
+
+#res {
+  display: block;
+  position: absolute;
+  left: 79vw;
+  top: 81%;
+}
+
+#saveBtn {
+  display: block;
+  position: absolute;
+  left: 79vw;
+  top: 88%;
+  padding: 20px;
+  background-color: rgba(255,255,255,0);
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  font-size: 14px;
+  color: white;
+}
+
+/* #saveBtn:hover {
+  background-color: rgb(219, 219, 219);
+  color: black;
+  transition: 0.5s;
+  cursor: pointer;
+} */
+
