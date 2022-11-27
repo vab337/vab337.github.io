@@ -1,0 +1,18 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+#txtInput1{
+  display: block;
+  position: absolute;
+  left : 0;
+  top: 0;
+  margin: 50px;
+  background-color: black;
+  opacity: 0;
+  z-index: -1;
+}
