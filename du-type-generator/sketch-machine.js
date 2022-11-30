@@ -101,8 +101,8 @@ function setup() {
 
 
 
-	col1 = color(255,0,0);
-	col2 = color(0,0,255);
+	col1 = color(255);
+	col2 = color(255);
 	type1 = new GenType('SHADOW', width/4, col1);
 	type2 = new GenType('A', width/4, col2);
 	rectMode(CENTER);
