@@ -15,6 +15,8 @@ let res, resP;
 let saveBtn;
 let speedScale;
 
+let textSizeSlider, textSizeSliderP;
+
 let bgColor, type1Color, type2Color; 
 
 
@@ -29,6 +31,14 @@ function setup() {
 	bgColor = document.getElementById("bgColor").value;
 	type1Color = document.getElementById("type1Color").value;
 	type2Color = document.getElementById("type2Color").value;
+
+	textSizeSliderP = createP("5. Text Size");
+	textSizeSliderP.id('textSizeSliderP');
+	textSizeSliderP.class('titles');
+	textSizeSlider = createSlider(0,width,0,10);
+	textSizeSlider.id('textSizeSlider');
+	textSizeSlider.class('sliders');
+	textSizeSlider.changed(slider2Change);
 
 	txtInputP = createP("1. TEXT INPUTS");
 	txtInputP.id('txtInputP');
@@ -82,7 +92,7 @@ function setup() {
 	rectWP.id('rectWP');
 	rectWP.class('h2');
 
-	rectW = createSlider(-50,50,0,0);//slider value pending 
+	rectW = createSlider(-50,200,0,0);//slider value pending 
 	rectW.id('rectW');
 	rectW.class('sliders');
 
@@ -90,7 +100,7 @@ function setup() {
 	rectHP.id('rectHP');
 	rectHP.class('h2');
 
-	rectH = createSlider(-50,50,0,0); //slider value pending
+	rectH = createSlider(-50,200,0,0); //slider value pending
 	rectH.id('rectH');
 	rectH.class('sliders');
 
@@ -126,8 +136,8 @@ function draw() {
 	type1.move();
 	type1.changeText1();
 
-	type2.show2();
-	type2.move2();
+	type2.show();
+	type2.move();
 	type2.changeText2();
 	//noLoop();
 }
@@ -143,7 +153,7 @@ class GenType {
 
 	show() {
 		let bounds = font.textBounds(this.txtString, 0, 0, this.txtSize);
-		points = font.textToPoints(this.txtString, -bounds.w / 2, bounds.h / 2, this.txtSize, {
+		points = font.textToPoints(this.txtString, -bounds.w / 2, bounds.h / 2, textSizeSlider.value(), {
 			sampleFactor : res.value(),
 			simplifyThreshold: 0
 		});
@@ -152,7 +162,7 @@ class GenType {
 
 	show2() {
 		let bounds = font.textBounds(this.txtString, 0, 0, this.txtSize);
-		points = font.textToPoints(this.txtString, -bounds.w / 2+300, bounds.h / 2-80, this.txtSize, {
+		points = font.textToPoints(this.txtString, -bounds.w / 2+300, bounds.h / 2-90, this.txtSize, {
 			sampleFactor : res.value(),
 			simplifyThreshold: 0
 		});
@@ -168,7 +178,7 @@ class GenType {
 		for (let i=0; i<points.length; i++) {
 			let p = points[i];
 			// let s = mouseY/10 + sin(i*0.075 - frameCount * 0.15) * 10;
-			let s = mouseY/10 + sin(i*slider1.value() - frameCount * slider2.value()) * speedScale;
+			let s = mouseY/10 + sin(i*slider1.value() - frameCount * slider2.value()) * slider3.value();
 			noStroke();
 			//fill(this.txtCol);
 			fill(type1Color);
@@ -183,7 +193,7 @@ class GenType {
 		for (let i=0; i<points.length; i++) {
 			let p = points[i];
 			// let s = mouseY/10 + sin(i*0.075 - frameCount * 0.15) * 10;
-			let s = mouseY/10 + sin(i*slider1.value() - frameCount * slider2.value()) * speedScale;
+			let s = mouseY/10 + sin(i*slider1.value() - frameCount * slider2.value()) * slider3.value();
 			noStroke();
 			//fill(this.txtCol);
 			fill(type2Color);
