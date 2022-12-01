@@ -13,6 +13,9 @@ let slider1, slider2, slider3;
 let rectW, rectH;
 let res, resP;
 let saveBtn;
+let speedScale;
+
+let bgColor, type1Color, type2Color; 
 
 
 
@@ -23,6 +26,9 @@ function preload() {
 
 function setup() {
 	canvas = createCanvas(windowWidth-windowWidth/4, windowHeight);
+	bgColor = document.getElementById("bgColor").value;
+	type1Color = document.getElementById("type1Color").value;
+	type2Color = document.getElementById("type2Color").value;
 
 	txtInputP = createP("1. TEXT INPUTS");
 	txtInputP.id('txtInputP');
@@ -101,23 +107,27 @@ function setup() {
 
 
 
-	col1 = color(255);
-	col2 = color(255);
-	type1 = new GenType('SHADOW', width/4, col1);
-	type2 = new GenType('A', width/4, col2);
+	// col1 = color(type1Color.value());
+	// col2 = color(type2Color.value());
+	type1 = new GenType('Đ', width/2, col1);
+	type2 = new GenType('Ủ', width/2, col2);
 	rectMode(CENTER);
 
 }
 
 function draw() {
-	background(0);
+	bgColor = document.getElementById("bgColor").value;
+	type1Color = document.getElementById("type1Color").value;
+	type2Color = document.getElementById("type2Color").value;
+	console.log(bgColor);
+	background(bgColor);
  	translate(width/2, height / 2);
 	type1.show();
 	type1.move();
 	type1.changeText1();
 
-	type2.show();
-	type2.move();
+	type2.show2();
+	type2.move2();
 	type2.changeText2();
 	//noLoop();
 }
@@ -140,15 +150,43 @@ class GenType {
 
 	}
 
+	show2() {
+		let bounds = font.textBounds(this.txtString, 0, 0, this.txtSize);
+		points = font.textToPoints(this.txtString, -bounds.w / 2+300, bounds.h / 2-80, this.txtSize, {
+			sampleFactor : res.value(),
+			simplifyThreshold: 0
+		});
+
+	}
+
+	
+
 
 	move() {
-		blendMode(DIFFERENCE);
+		speedScale = map(mouseX, 0, width, 1,80);
+		blendMode(EXCLUSION);
 		for (let i=0; i<points.length; i++) {
 			let p = points[i];
 			// let s = mouseY/10 + sin(i*0.075 - frameCount * 0.15) * 10;
-			let s = mouseY/10 + sin(i*slider1.value() - frameCount * slider2.value()) * slider3.value();
+			let s = mouseY/10 + sin(i*slider1.value() - frameCount * slider2.value()) * speedScale;
+			noStroke();
+			//fill(this.txtCol);
+			fill(type1Color);
+			rect(p.x,p.y,s+rectW.value(),s+rectH.value());
+		}
+		blendMode(BLEND);
+	}
 
-			fill(this.txtCol);
+	move2() {		
+		speedScale = map(mouseX, 0, width, 1,80);
+		blendMode(EXCLUSION);
+		for (let i=0; i<points.length; i++) {
+			let p = points[i];
+			// let s = mouseY/10 + sin(i*0.075 - frameCount * 0.15) * 10;
+			let s = mouseY/10 + sin(i*slider1.value() - frameCount * slider2.value()) * speedScale;
+			noStroke();
+			//fill(this.txtCol);
+			fill(type2Color);
 			rect(p.x,p.y,s+rectW.value(),s+rectH.value());
 		}
 		blendMode(BLEND);
@@ -185,50 +223,3 @@ function keyPressed() {
 	} 
 }
 
-//mouseY/10 + sin(i*0.075<movement of the squares> - frameCount * 0.15) *  30 <slower/faster>;		
-
-
-	// function genType(txtString, txtSize) {
-// 	let bounds = font.textBounds(txtString, 0, 0, txtSize);
-// 	points = font.textToPoints(txtString, -bounds.w / 2, bounds.h / 2, txtSize, {
-// 		sampleFactor : 0.05,
-// 		simplifyThreshold: 0
-		
-// 	});
-// }
-
-
-	// blendMode(DIFFERENCE);
-		// for(let i = 0; i < points.length; i++) {
-		// 	let p = points[i];
-		// 	let s = mouseY / 10 + sin(i * 0.025 + frameCount * 0.05) *10;
-		// 	noStroke();
-		// 	fill(25, 59, 227);
-		// 	circle(p.x, p.y, s);
-		// 	//rect(p.x, p.y, s,s*2);
-		// }	
-		// blendMode(BLEND);
-
-
-//RECT 
-//let s = 30 + sin(i*0.5 + frameCount * 0.15) *10;
-//rect(p.x,p.y,s,s);
-
-
-// let s = mouseY/10 + sin(i*6.5 - frameCount * 0.05) *80;
-// fill(this.txtCol);
-// ellipse(p.x,p.y,s/2,s/2);
-
-// let s = mouseY/10 + sin(i*0.075 - frameCount * 0.25) * 30;
-// fill(this.txtCol);
-// rect(p.x,p.y,s/2,s/2);
-
-
-// let s = mouseY/10 + sin(i*0.075 - frameCount * 0.15) * 30;
-// fill(this.txtCol);
-// rect(p.x,p.y,s,s);
-
-//EXPAND IN BOTH DIRECTIONS - EXTREME 
-// let s = mouseY/10 + sin(i*0.075 - frameCount * 0.15) * 30;
-// fill(this.txtCol);
-// rect(p.x,p.y,s,s-50);
