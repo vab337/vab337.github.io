@@ -115,7 +115,7 @@ function setup() {
 
 
 
-	type1 = new GenType('Đ', width/2, col1);
+	type1 = new GenType('Đ', width/3, col1);
 	rectMode(CENTER);
 
 }
