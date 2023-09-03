@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cube field</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="assets/jquery-3.7.1.min.js"></script>
+
+
+  </head>
+
+  <body>
+
+    <div id="container" class="animator">
+    </div>
+    <!-- <input type="text" id="h1input" placeholder="h1 text">  -->
+  <div class="inputscontainer" id="inputscontainer">
+    <textarea id="h1input" placeholder="h1 text">FROM THE GROUND UP</textarea>
+    <input type="range" min="0" max="100" value="50" class="slider" id="h1factor">
+    <textarea id="h2input" placeholder="h2 text">9AM-9PM 12.10-12.16</textarea>
+    <input type="range" min="0" max="100" value="50" class="slider" id="h2factor">
+    <textarea id="h3input" placeholder="h3 text">The Tiny Desk is working from home for the foreseeable future. Introducing NPR Music's Tiny Desk (home) concerts, bringing you performances from across the country and the world. It's the same spirit — stripped-down sets, an intimate setting — just a different space.
+    </textarea>
+    <input type="range" min="0" max="100" value="50" class="slider" id="h3factor">
+    <button id="rotatebtn">Rotate</button>
+    <input type="color" id="color1" name="head" value="#16FF89" />
+    <input type="color" id="color2" name="head" value="#FFFFFF" />
+  </div>
+
+  <button id="hidecontrols">Hide controls</button>
+    <script src="sketch.js"></script>
+  </body>
+</html>

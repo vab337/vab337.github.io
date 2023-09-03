@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cubeW: 100px;
+  --cubeH: 100px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000; 
+}
+
+
+.cube {
+  position: absolute;
+  left: calc(var(--cubeW)*var(--j));
+  width: var(--cubeW);
+  height: var(--cubeH);
+  transform-style: preserve-3d;
+  transform: rotateX(-30deg) rotateY(30deg);
+  /* animation: animate 10s linear infinite; */
+}
+
+@keyframes animate {
+  0% {
+    transform: rotateX(-30deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(-30deg) rotateY(360deg);
+  }
+}
+
+.cube div {
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.cube div span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background:  #00f; 
+  transform: rotateY(calc(90deg*var(--i))) translateZ(calc(var(--cubeW)/2));
+  transition: height 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.cube div span:hover {
+  background:  rgb(0, 255, 21); 
+  transition: background 2s linear ;
+}
+
+.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--cubeW) !important;
+  height: var(--cubeW)!important;
+  background: linear-gradient(#000, #f0f); 
+  transform: rotateX(90deg) translateZ(calc(var(--cubeW)/2));
+  transition: background 1s;
+  cursor: pointer;
+}
+
+.top :hover {
+  background: linear-gradient(#000, #00f); 
+  transition: background 1s;
+
+}
+
+.top::before {
+  content: '' ;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--cubeW);
+  height: var(--cubeW);
+  background: linear-gradient(#000, #f00); 
+  transform: translateZ(-400px);
+  filter: blur(20px);
+}
+
+
+
+

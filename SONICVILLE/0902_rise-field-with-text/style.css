@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: PPMori;
+  src: url(../assets/PPMori-Regular.otf);
+}
+
+:root {
+  --cubeW: 100px;
+  --cubeH: 100px;
+  --green: #16FF89;
+  --yellow: #FFFF42;
+  --palegren: #E5FFD5;
+  --gradient3: linear-gradient(#16FF89 0%,#E5FFD5,  #FFFF42 95%); 
+  --greengrad:  linear-gradient(#16FF89,#fff); 
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000; 
+  font-family: PPMori;
+}
+
+#container {
+  display: block;
+
+  width: 100vw;
+  height: 300px;
+  flex-flow: row wrap;
+  row-gap: 0px;
+  position: absolute;
+  top:0;
+  left: 0;
+  transform-style: preserve-3d;
+  /* transform: rotateX(-30deg) rotateY(80deg); */
+}
+
+.animator {
+    animation: rotatefield 20s linear infinite;
+
+}
+
+/* #container {
+  display: inline-block;
+  overflow: wrap;
+  width: 100vw;
+  height: 300px;
+  position: absolute;
+  top:0;
+  left: 0;
+  transform-style: preserve-3d;
+  transform: rotateX(-30deg) rotateY(-20deg);} */
+
+
+@keyframes rotatefield {
+  0%{
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  100%{
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(0deg);
+  }
+}
+
+.cube {
+  position: absolute;
+  width:0;
+  height: 0;
+  transform-style: preserve-3d;
+  transform: rotateX(-30deg) rotateY(-80deg);
+  /* background-color: #fff;
+  border: #000 solid 1px; */
+  /* transform: rotateX(-30deg) rotateY(30deg); */
+  /* animation: animate 10s linear infinite; */
+}
+
+@keyframes animate {
+  0% {
+    transform: rotateX(-30deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(-30deg) rotateY(-20deg);
+  }
+}
+
+.cube div {
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  /* transform: rotateZ(90deg) rotateY(0deg) rotateX(90deg) translateY(calc(var(--cubeH)/2)); */
+}
+
+
+
+.cube div span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--greengrad);
+  transform-origin: bottom center;
+  transform: rotateY(calc(90deg*var(--i))) translateZ(calc(var(--cubeW)/2));
+  transition: height 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+.cube div span:hover {
+  background:  rgb(0, 255, 21);   
+  transition: background 2s linear ;
+}
+
+.top {
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  background: var(--greengrad);
+  width:0;
+  height: 0;
+  /* transform: rotateX(90deg) translateZ(calc(var(--cubeW)/2*(-1))); */
+  transition: background 1s ease, transform 1s cubic-bezier(0.075, 0.82, 0.165, 1) ;
+  cursor: pointer;
+}
+
+.top :hover {
+  background: linear-gradient(#000, #00f); 
+  transition: background 1s;
+
+}
+
+/* .top::before {
+  content: '' ;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--cubeW);
+  height: var(--cubeW);
+  background: linear-gradient(#000, #f00); 
+  transform: translateZ(-400px);
+  filter: blur(20px);
+} */
+
+input {
+  position: relative;
+  bottom: 0;
+  font-size: 14px;
+}
+
+.inputscontainer {
+  position: absolute;
+  width: 10vw;
+  top: 0 ; 
+  left: 0;
+}
+
+.inputscontainer > * {
+  margin: 2px;
+}
+
+textarea {
+  position: relative;
+  font-family: PPMori;
+  background: #000;
+  color: white;
+  font-size: 10px;
+  border-radius: 5px;  
+  border: #fff solid 0.5px;
+
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;  
+  border: #fff solid 1px;
+  background: rgba(0,0,0,0.2);
+
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; 
+  background: #fff;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+button {
+  padding: 3px;
+  border-radius: 5px;  
+  border: #fff solid 1px;
+  background: rgba(0,0,0,0.2);
+  color: #fff;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+#hidecontrols {
+  position: absolute;
+  bottom:0;
+  left:0;
+}
+
+.controlshidden {
+  visibility: hidden;
+}
+
+.h1text {
+  word-wrap: break-word;
+}
+
+.h2text {
+  word-wrap: break-word;
+
+}
+
+.h3text {
+  word-wrap: break-word;
+
+}
+
+
+

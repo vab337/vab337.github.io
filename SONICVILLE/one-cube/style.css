@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: PPMori;
+}
+
+@font-face {
+  font-family: PPMori;
+  src: url(../assets/PPMori-Regular.otf);
+}
+
+:root {
+  --cubeW: 400px;
+  --cubeH: 400px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000; 
+}
+
+img {
+  width: auto;
+  height:100%;
+}
+
+.cube {
+  position: absolute;
+  left: calc(var(--cubeW)*var(--j));
+  width: var(--cubeW);
+  height: var(--cubeH);
+  transform-style: preserve-3d;
+  transform: rotateX(-30deg) rotateY(30deg);
+  /* animation: animate 10s linear infinite; */
+}
+
+@keyframes animate {
+  0% {
+    transform: rotateX(-30deg)  rotateY(0deg) rotateZ(0deg) ;
+  }
+  100% {
+    transform: rotateX(-30deg) rotateY(360deg) rotateZ(0) ;
+  }
+}
+
+.cube div {
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.cube div span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  overflow: hidden;
+  background:  rgb(255, 255, 255);
+  transform: rotateY(calc(90deg*var(--i))) translateZ(calc(var(--cubeW)/2));
+  transition: height 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.cube div span:hover {
+  background:  rgb(66,254,50); 
+  transition: background 1xs linear ;
+}
+
+.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  width: var(--cubeW) !important;
+  height: var(--cubeW)!important;
+  /* background: radial-gradient(circle, rgb(225, 255, 0) 60%,rgb(0, 255, 21) 90%) ; */
+  background: radial-gradient(circle, rgb(255, 255, 0) 20%,rgb(255, 255, 255) 90%) ;
+  transform: rotateX(90deg) translateZ(calc(var(--cubeW)/2));
+  transition: background 1s;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.top :hover {
+  background: linear-gradient(#000, #00f); 
+  transition: background 1s;
+
+}
+
+.top::before {
+  content: '' ;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--cubeW);
+  height: var(--cubeW);
+  background: linear-gradient(#fff, #0f0); 
+  transform: translateZ(-400px);
+  filter: blur(20px);
+}
+
+
+
+
