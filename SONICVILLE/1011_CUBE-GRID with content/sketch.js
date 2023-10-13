@@ -346,7 +346,7 @@ function gridHoverEnd() {
 
 //text input
 const textinput = document.getElementById("textinput");
-textinput.addEventListener("change",replaceText);
+// textinput.addEventListener("change",replaceText);
 
 //text input options
 for (var t = 1; t < 5 ; t++) {
@@ -362,6 +362,7 @@ var sideNumber = 1;
 
 function sideChosen() {
    sideNumber = parseInt(this.id.substr(10));
+   replaceText();
 }
 
 function replaceText() {
