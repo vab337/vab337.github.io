@@ -1,0 +1,276 @@
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: Light;
+  src: url(assets/AeonikTRIAL-Light.otf);
+}
+
+@font-face {
+  font-family: Regular;
+  src: url(assets/Aeonik-Regular.ttf);
+}
+
+:root {
+  --cubeW: 100px;
+  --cubeH: 100px;
+  --green: #16FF89;
+  --yellow: #FFFF42;
+  --palegren: #E5FFD5;
+  --gradient3: linear-gradient(#16FF89 0%,#E5FFD5,  #FFFF42 95%); 
+  --greengrad:  linear-gradient(#16FF89,#fff); 
+  --yellowgrad:  linear-gradient(#FFFF42,#fff); 
+  --blue: #041D30;
+  --light: #BBC7D6;
+  --white: #fff;
+  --cpgradient: linear-gradient(#16FF89,  #FFFF42); 
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: black;
+
+  /* background: linear-gradient(#16FF89 0%,#fff 5%,#fff 80%, #16FF89 95%);  */
+  font-family: Light;
+  user-select: none; /* Standard syntax */
+
+}
+
+#container {
+  display: block;
+  width: 100vw;
+  height: 300px;
+  flex-flow: row wrap;
+  row-gap: 0px;
+  position: absolute;
+  top:100px;
+  left: 300px;
+  transform-style: preserve-3d;
+  transform-origin: center center 0;
+    /* animation: rotatefield 20s linear infinite; */
+}
+
+.animator {
+    /* animation: rotatefield 20s linear infinite; */
+}
+
+
+@keyframes rotatefield {
+  0%{
+    transform: rotateX(-30deg) rotateY(0deg);
+  }
+  100%{
+    transform: rotateX(-30deg) rotateY(360deg);
+  }
+}
+
+.cube {
+  position: absolute;
+  /* width:0;
+  height: 0; */
+  transform-style: preserve-3d;
+  /* animation: rotatefield 5s linear infinite; */
+
+
+
+}
+
+@keyframes animate {
+  0% {
+    transform: rotateX(-30deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(-30deg) rotateY(360deg);
+  }
+}
+
+.cube div {
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+
+
+.cube div span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* background: var(--greengrad); */
+  /* border: 1px solid white; */
+  color:white;
+  transform-origin: bottom center;
+  transform: rotateY(calc(90deg*var(--i))) translateZ(calc(var(--cubeW)/2));
+  transition:  0.5s ease;
+  background-size: cover; /* Resize the background image to cover the entire container */
+
+}
+
+
+.top {
+  position: absolute;
+  visibility: visible;
+  top: 0;
+  left: 0;
+  /* background: white; */
+  /* border: 1px solid white; */
+  width:0;
+  height: 0;
+  /* transform: rotateX(90deg) translateZ(calc(var(--cubeW)/2*(-1))); */
+  transition: background 1s ease, transform 1s cubic-bezier(0.075, 0.82, 0.165, 1) ;
+  cursor: pointer;
+}
+
+
+input {
+  position: relative;
+  bottom: 0;
+  font-size: 14px;
+}
+
+.inputscontainer {
+  position: absolute;
+  padding: 20px;
+  width: 20vw;
+  top: 0 ; 
+  left: 0;
+  font-size: 15px;
+  border-radius: 12px;
+  background: #1d1f2adb
+}
+
+.inputscontainer > div {
+  margin-top: 20px;
+}
+
+textarea {
+  position: relative;
+  font-family: PPMori;
+  background: #000;
+  color: white;
+  font-size: 10px;
+  border-radius: 5px;  
+  border: #fff solid 0.5px;
+
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;  
+  border: #fff solid 1px;
+  background: rgba(0,0,0,0.2);
+
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; 
+  background: #fff;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+button {
+/* display: flex; */
+padding: 10px 10px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+align-self: stretch;
+border-radius: 100px;
+border: 0px solid var(--light);
+background: rgba(150, 150, 150, 0.2);
+color: var(--light);
+}
+
+button:hover {
+  background: #bbc7d68a;
+  transition: 0.5s ease;
+}
+
+#generalcontrols {
+  position: absolute;
+  bottom:0;
+  left:0;
+}
+
+#generalcontrols > button {
+  cursor: pointer;
+}
+
+.controlshidden {
+  visibility: hidden;
+}
+
+.gridShown {
+  border: 1px solid white;
+}
+
+.h1text {
+  word-wrap: break-word;
+  font-size: 150px;
+  line-height: 60px;
+  /* font-size: 100px;
+  line-height: 80px; */
+  letter-spacing: −5px; 
+}
+
+
+.h2text {
+  word-wrap: break-word;
+  font-size: 70px;
+  line-height: 60px;
+  letter-spacing: −5px;
+
+}
+
+.h3text {
+  word-wrap: break-word;
+  font-size: 70px;
+  line-height: 60px;
+  letter-spacing: −5px; 
+
+
+}
+
+.h4text {
+  word-wrap: break-word;
+  font-size: 70px;
+  line-height: 60px;
+  /* font-size: 50px;
+  line-height: 40px; */
+  letter-spacing: −5px; 
+
+}
+
+
+
