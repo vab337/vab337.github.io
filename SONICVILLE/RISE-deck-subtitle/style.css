@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: PPMori;
+}
+
+@font-face {
+  font-family: PPMori;
+  src: url(assets/AeonikTRIAL-Light.otf);
+}
+
+:root {
+  --cubeW: 500px;
+  --cubeH: 500px;
+  --green: #16FF89;
+  --yellow: #FFFF42;
+  --palegren: #E5FFD5;
+  --gradient3: linear-gradient(#16FF89 0%,#E5FFD5,  #FFFF42 95%); 
+  --blue: #041D30;
+  --light: #BBC7D6;
+  --white: #fff;
+  --cpgradient: linear-gradient(#16FF89,  #FFFF42); 
+
+
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--blue); 
+
+}
+
+img {
+  pointer-events: none;
+  /* width: 100%;
+  height: auto; */
+}
+
+#inputcontainer {
+  position: absolute;
+  top:10px;
+  left:10px
+}
+
+.title {
+  font-size: 70px;
+  text-align: center;
+  line-height: 90%;
+  letter-spacing: -3px;
+  /* padding: 10px; */
+}
+
+.h1 {
+  text-align: center;
+  font-size: 100px;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.h2 {
+  text-align: center;
+  font-size: 30px;
+  line-height: 90%;
+  letter-spacing: -1px;
+}
+
+.h3 {
+  text-align: center;
+  font-size: 20px;
+  line-height: 90%;
+}
+.cube {
+  position: absolute;
+  /* left: calc(var(--cubeW)*var(--j)); for many cubes  */
+  left: 20vw;
+  width: var(--cubeW);
+  height: var(--cubeH);
+  transform-style: preserve-3d;
+  transform: translateX(500px) rotateX(-30deg) rotateY(30deg) ;
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotateX(-30deg)  rotateY(360deg) ;
+  }
+  100% {
+    transform: rotateX(-30deg) rotateY(0);
+  }
+}
+
+.cube div {
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.cube div span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  overflow: hidden;
+  transform-origin: bottom center;
+  transform: rotateY(calc(90deg*var(--i))) translateZ(calc(var(--cubeW)/2));
+  transition: height 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  color: black;
+
+}
+
+
+.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--cubeW) ;
+  height: var(--cubeW);
+  overflow: hidden;
+
+  /* width:  auto;
+  height: auto; */
+  background: var(--cpgradient);
+
+  /* transform: rotateX(90deg) translateZ(calc(var(--cubeW)/2)); */
+  transform: rotateX(90deg) translateZ(calc(var(--cubeW)/2*(-1)));
+  transition: background 1s ease, transform 1s cubic-bezier(0.075, 0.82, 0.165, 1) ;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.top img {
+  /* width: 100%;
+  height: auto; */
+  height: 100%;
+  width: auto;
+}
+
+
+/* .top::before {
+  content: '' ;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--cubeW);
+  height: var(--cubeW);
+  background: linear-gradient(#FFFF42, #16FF89); 
+  transform: translateZ(calc(var(--cubeH)*(-1)));
+  filter: blur(20px);
+} */
+
+.label {
+  text-align: center;
+  font-size:30px;
+}
+
+#item0 {
+  display: none;
+  left: 40%;
+}
+
+
+#item0 div span {
+  width: 100%;
+  height: 100%;
+  border: #fff solid 1px;
+
+}
+
+#innertext {
+  color:#041D30;
+  border: #fff solid 0px;
+  top:30%;
+  font-size: 80px;
+  height: 100%;
+}
+
+#description {
+  color:#fff;
+  border: #fff solid 0px;
+  top:50%;
+  font-size: 40px;
+  height: 100%;
+}
+
+
+
+#item1  {
+  left: 40%;
+  z-index: 10;
+  color: white;
+  /* animation: animate0 10s linear infinite; */
+}
+
+@keyframes animate0 {
+  0% {
+    transform: rotateX(-30deg)  rotateY(360deg) rotateZ(0deg) ;
+  }
+  100% {
+    transform: rotateX(-30deg) rotateY(0) rotateZ(360deg);
+  }
+}
+
+
+#item1 div span {
+  opacity: 1;
+  overflow: hidden;
+}
+
+#item1 div span img {
+  height: 100%;
+  width: 150%;
+}
+
+
+
+#item2 {
+  display: none;
+  top:50%;
+  left: 10%;
+}
+
+
+
+#item3 {
+    display: none;
+
+  top:20px;
+  left: 70%;
+}
+
+#item4 {
+  display: none;
+  top:50%;
+  left: 70%;
+}
+
+
+#backside1 {
+  color: black;
+  transform: translateZ(-250.1px) rotateY(180deg);
+  background: var(--blue);
+}
+
+#backside1 img {
+  position: relative;
+  top: 5%;
+  width: 90% !important;
+  height:auto !important;
+}
+
+
+#backside2 {
+    color: black;
+    transform: translateX(-250.1px) rotateY(-90deg);
+    background: var(--blue);
+}
+
+#backside2 img {
+  position: relative;
+  top: 5%;
+  width: 90% !important;
+  height:auto !important;
+}
+
+
+.inside {
+  background: var(--cpgradient);
+}
+
+.title {
+  font-size: 170px;
+  color: black;
+  text-align: center;
+  line-height: 90%;
+  letter-spacing: -3px;
+  /* padding: 10px; */
+}
+
+#innertext {
+  background-color:transparent;
+}
+
